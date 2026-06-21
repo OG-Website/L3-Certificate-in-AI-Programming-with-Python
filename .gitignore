@@ -1,0 +1,4 @@
+*.log
+temp/
+test-output/
+debug.txt
