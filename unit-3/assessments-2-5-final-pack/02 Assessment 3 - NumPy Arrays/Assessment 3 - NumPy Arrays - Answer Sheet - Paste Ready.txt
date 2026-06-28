@@ -1,0 +1,33 @@
+Unit 3 Libraries for Python Assessment 3 Answer Sheet
+
+Q1. What NumPy is used for and what an ndarray is
+
+NumPy is a third-party Python library used for numerical computing. It is useful when working with arrays, matrices and large groups of numbers. The main NumPy data structure is the ndarray, which means n-dimensional array. An ndarray can be one-dimensional, two-dimensional or higher-dimensional, and it stores data in a structured numerical form.
+
+NumPy is used because it makes mathematical and data-processing operations easier than using normal Python lists. For example, an ndarray can store a table of scores, measurements or dataset values, and NumPy can calculate across the whole array efficiently. NumPy arrays also have useful properties such as shape, ndim, size and dtype. These properties show the structure, number of dimensions, number of elements and data type of the array.
+
+In this assessment, NumPy is used practically inside a Jupyter Notebook. The notebook creates an ndarray, prints its properties, saves it to files and loads the saved files back to prove the saving process worked.
+
+Q2. How to create, save and load NumPy ndarrays
+
+An ndarray can be created after importing NumPy with import numpy as np. A common method is np.array(), which creates an ndarray from existing data such as a list or nested list. For example:
+
+og_scores = np.array([[82, 76, 91], [68, 88, 95]], dtype=int)
+
+This creates a two-dimensional ndarray with two rows and three columns. The dtype=int argument stores the values as integers. After creating the ndarray, the notebook prints shape, ndim, size and dtype so the structure can be checked.
+
+An ndarray can be saved with np.savetxt or np.save. np.savetxt saves a readable text or CSV-style file, while np.save saves NumPy's native .npy format. The .npy format is useful because it preserves the ndarray structure and data type for later loading. The notebook proves the process by loading the saved files back with np.loadtxt and np.load.
+
+Q3. Use NumPy to create and save an ndarray - practical evidence submission
+
+This question is practical evidence, not theory-only. The main submission evidence is the uploaded Jupyter Notebook:
+
+Assessment 3 Q3 - NumPy ndarray Practical Evidence.ipynb
+
+The notebook meets the question requirements because it uses the third-party NumPy library to create and save an ndarray. It includes markdown cells and code comments explaining what each step does. The notebook creates a two-dimensional ndarray called og_scores, prints the ndarray, prints shape, dimensions, size and data type, then saves the ndarray in three files:
+
+- og_unit3_scores_ndarray.txt
+- og_unit3_scores_ndarray.csv
+- og_unit3_scores_ndarray.npy
+
+The notebook then loads the saved text file and .npy file back into Python. This proves that the ndarray was saved correctly and can be reused. If the VLE asks for screenshots, use screenshots from the notebook cells. If the VLE accepts an upload, upload the notebook file. If the VLE asks for a URL, upload the Q3 Practical Evidence folder to GitHub and paste the notebook URL.

@@ -1,0 +1,104 @@
+OG Web.site Unit 3 Statistical Analysis Support - Rob Johnston
+==============================================================
+
+This support document opens the statistical-analysis part of Unit 3 using the active project files already in the Libraries for Python folder. It is written for the OG Web.site evidence workflow, so the practical work links back to the actual files: pandasdf.ipynb, pandasds.ipynb, statistical_analysis.ipynb and titanic.csv.
+
+Assessment Link
+---------------
+
+The current Unit 3 Assessment 3 word-count targets are Q1 at 600-800 words, Q2 at 500-600 words, and Q3 as practical annotated code. Statistical analysis sits beside the Pandas/DataFrame work because the evidence comes from loading titanic.csv, inspecting the data, running summary statistics and explaining what the output proves.
+
+Practical Aim
+-------------
+
+The aim is to demonstrate that Pandas can be used to perform basic statistical analysis on a real CSV file. The notebook should show the dataset loading, the first rows, the data types, summary statistics, individual measures such as mean and median, grouped comparisons, and short annotations explaining each output. This gives the assessor a practical trail rather than a generic definition.
+
+Project Files Used
+------------------
+
+- titanic.csv - the local dataset used for the analysis.
+- pandasdf.ipynb - existing DataFrame notebook showing pd.read_csv, head, dtypes and describe.
+- pandasds.ipynb - existing Series notebook showing the Titanic Age column as a Series.
+- statistical_analysis.ipynb - new practical notebook created for focused statistical evidence.
+- OG Web.site U3 Statistical Analysis How-To Guide - Rob Johnston.docx - branded support guide for screenshots and annotations.
+
+How To Run The Statistical Analysis
+-----------------------------------
+
+1. Open the active Unit 3 folder: C:\OGBuild\College\Unit 3 - Libraries for python\ACTIVE - Unit 3 Submission.
+2. Open Jupyter Notebook from the same folder so the notebook can see titanic.csv without needing a different path.
+3. Open statistical_analysis.ipynb.
+4. Run the first code cell to import Pandas, locate titanic.csv and load it into a DataFrame called titanic_df.
+5. Run the inspection cell to show head(), shape and dtypes. This proves the data has loaded and shows what columns are available.
+6. Run the summary-statistics cell to show describe(), mean, median, mode and standard deviation for selected numeric fields.
+7. Run the grouped-analysis cell to compare survival rate by sex and passenger class. This proves the analysis is not just one number; it is using the dataset to compare groups.
+8. Take screenshots for the evidence folder and paste them into the branded SS evidence sheet with annotations.
+
+Evidence Screenshots Needed
+---------------------------
+
+- Screenshot 1: Jupyter file browser showing statistical_analysis.ipynb and titanic.csv in the active folder.
+- Screenshot 2: Code cell importing Pandas and loading titanic.csv successfully.
+- Screenshot 3: head(), shape and dtypes output proving the DataFrame structure.
+- Screenshot 4: describe(), mean, median, mode and standard deviation output proving statistical analysis.
+- Screenshot 5: grouped survival analysis by Sex and Pclass proving comparison of categories.
+- Screenshot 6: missing-value count or filtered DataFrame output proving practical data inspection.
+
+Annotation Text For Evidence Sheet
+----------------------------------
+
+This screenshot shows the Unit 3 Titanic CSV file loaded into a Pandas DataFrame inside the OG Web.site active submission folder. The output proves that the dataset has been read successfully and that the DataFrame columns are available for analysis.
+
+This screenshot shows statistical analysis being performed with Pandas. The describe output summarises numeric columns, while mean, median, mode and standard deviation give separate measures of central tendency and spread. This evidence proves that the notebook is not only loading data, but also analysing it.
+
+This screenshot shows grouped analysis by Sex and Pclass. It compares survival rates across categories, which is a more useful analysis than only showing the full-table average. It demonstrates that Pandas can group records and calculate statistics for each group.
+
+Practical Code Used
+-------------------
+
+```python
+# OG Web.site Unit 3 - Statistical Analysis practical evidence
+# This notebook uses the local Titanic CSV file from the active Unit 3 folder.
+
+from pathlib import Path
+import pandas as pd
+
+csv_path = Path("titanic.csv")
+if not csv_path.exists():
+    csv_path = Path("data") / "titanic.csv"
+
+# Load the CSV into a DataFrame so the data can be inspected and analysed.
+titanic_df = pd.read_csv(csv_path)
+
+print("Rows and columns:", titanic_df.shape)
+print("First five rows:")
+print(titanic_df.head())
+
+print("Data types:")
+print(titanic_df.dtypes)
+
+print("Summary statistics:")
+print(titanic_df.describe())
+
+numeric_columns = ["Age", "Fare", "SibSp", "Parch", "Survived"]
+print("Mean values:")
+print(titanic_df[numeric_columns].mean(numeric_only=True))
+
+print("Median values:")
+print(titanic_df[numeric_columns].median(numeric_only=True))
+
+print("Mode values:")
+print(titanic_df[numeric_columns].mode().head(1))
+
+print("Standard deviation values:")
+print(titanic_df[numeric_columns].std(numeric_only=True))
+
+print("Survival rate by sex:")
+print(titanic_df.groupby("Sex")["Survived"].mean())
+
+print("Survival rate by passenger class:")
+print(titanic_df.groupby("Pclass")["Survived"].mean())
+
+print("Missing values by column:")
+print(titanic_df.isna().sum())
+```

@@ -1,0 +1,15 @@
+ASSESSMENT 3 Q3 - GITHUB URL READY
+
+Notebook URL to paste into the VLE if it asks for a URL link:
+https://github.com/OG-Website/L3-Certificate-in-AI-Programming-with-Python/blob/main/unit-3/assessment-3-q3-numpy-ndarray-evidence/Assessment%203%20Q3%20-%20NumPy%20ndarray%20Practical%20Evidence.ipynb
+
+Folder URL containing the notebook, how-to guide and saved ndarray files:
+https://github.com/OG-Website/L3-Certificate-in-AI-Programming-with-Python/tree/main/unit-3/assessment-3-q3-numpy-ndarray-evidence
+
+Raw notebook URL if required:
+https://raw.githubusercontent.com/OG-Website/L3-Certificate-in-AI-Programming-with-Python/main/unit-3/assessment-3-q3-numpy-ndarray-evidence/Assessment%203%20Q3%20-%20NumPy%20ndarray%20Practical%20Evidence.ipynb
+
+Suggested VLE answer text:
+This Q3 is submitted as practical evidence. I used the third-party library NumPy to create and save an ndarray. The evidence is in my Jupyter Notebook here: https://github.com/OG-Website/L3-Certificate-in-AI-Programming-with-Python/blob/main/unit-3/assessment-3-q3-numpy-ndarray-evidence/Assessment%203%20Q3%20-%20NumPy%20ndarray%20Practical%20Evidence.ipynb
+
+The notebook includes markdown cells and code comments explaining how the ndarray is created and saved. It creates a two-dimensional ndarray, prints the array properties, saves the ndarray as .txt, .csv and .npy files, and loads the saved files back to prove the save worked.

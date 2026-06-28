@@ -1,0 +1,68 @@
+U3 Libraries for Python Lesson 2 - Assessment Answer Sheet
+
+Q1. Give a general description of what Jupyter Notebook is (2.1).
+Target used: 600-800 words.
+
+Jupyter Notebook is an interactive working environment used for writing, running, explaining and recording Python work. It is different from a normal Python script because the work is split into cells. A learner can run one cell at a time, check the output, correct mistakes, and continue building the notebook step by step. A Jupyter Notebook file is saved with the .ipynb extension, which means the code, written explanation, outputs and notebook structure are kept together in one file.
+
+The main purpose of Jupyter Notebook is to support practical programming and clear explanation at the same time. In a normal Python file, the code is usually separate from the written explanation, and the output may appear in a terminal or command prompt. In Jupyter Notebook, the code cell and its output are shown directly in the document. This makes it easier to understand what has been run and what result was produced. It is especially useful for learning because I can test small sections of code instead of trying to run a whole program at once.
+
+Jupyter Notebook is also useful for assessment evidence. A notebook can show the task heading, the explanation of the task, the Python code, and the output in one place. For example, in my Unit 3 work, myfirstjupyternotebook.ipynb can show a markdown explanation, a code cell that prints Hello, AI World, and another code cell that adds two numbers together. This gives clear evidence that the notebook has been used correctly and that the code has actually run. A screenshot of the notebook is stronger than a screenshot of output alone because it shows the code and the result together.
+
+Jupyter Notebook is widely used for data work because it works well with libraries such as NumPy, Pandas and Matplotlib. A notebook can import a library, create arrays, load a CSV file, display a table, calculate summary statistics, or show a chart. This is why it fits the Libraries for Python unit. The unit is not just about writing definitions; it is about using Python libraries in a practical way. Jupyter gives a clear space where those library tasks can be completed, tested and evidenced.
+
+Another benefit is that notebooks are easy to organise into a learning sequence. I can start with a markdown heading explaining the aim, then add a code cell, then add another markdown note explaining the output. This creates a readable record of the work. If something goes wrong, I can rerun the cell after correcting the code. If the output changes, the notebook can be saved again with the updated result. That makes Jupyter useful for experimenting, learning, documenting and presenting Python work.
+
+Jupyter also supports a professional evidence workflow because the original .ipynb file can be kept alongside screenshots, answer sheets and data files. This means the assessor can see the source notebook behind the written answer. It also means I can return to the file later if I need to improve a screenshot or rerun an example. The notebook is therefore both a working file and an evidence file.
+
+Overall, Jupyter Notebook is a practical Python environment that combines code, explanation and evidence. It helps me show what I did, how I did it, and what output was produced. For Unit 3, it is suitable because it supports notebook-based evidence, library use, data handling and clear written explanation in one file. It also helps keep the submission traceable because the written answer can refer back to the notebook file, the notebook file can be opened again, and the screenshots can show the exact code and output used as evidence.
+
+Q2. What are code cells and markdown cells in Jupyter Notebooks (2.2)?
+Target used: 500-600 words total across code cells and markdown cells.
+
+Code cells...
+Code cells are the executable parts of a Jupyter Notebook. They are used to write and run Python code. When I run a code cell, Jupyter sends the code to the Python kernel, the kernel processes it, and the output appears directly underneath the cell. This output might be printed text, a number, a table, an error message, a graph, or the result of using a Python library. Code cells are important because they prove that the practical work has actually been carried out.
+
+A code cell can be used for simple Python, such as print("Hello, AI World"), or for calculations such as creating two variables and adding them together. It can also be used for more advanced Unit 3 tasks. For example, a code cell can import NumPy, create an ndarray, inspect the array shape, load titanic.csv with Pandas, or display the first rows of a DataFrame. This makes code cells the practical evidence part of a notebook. If the code is wrong, Jupyter can show an error message, which also helps with testing and correction. When the code is correct, the output proves the work has run successfully.
+
+Markdown cells...
+Markdown cells are used for written explanation, headings, notes and structure. They do not run Python code. Instead, they help make the notebook readable for another person. A markdown cell can introduce a task, explain what the next code cell is meant to do, describe what an output proves, or separate the notebook into clear sections. Markdown can also be used for bullet points, bold text, numbered lists and headings.
+
+For assessment work, markdown cells are important because a notebook should not just be a block of code. The assessor needs to understand the purpose of each section. For example, I could write a markdown heading called Loading the Titanic dataset, then put a code cell below it that imports Pandas and reads the CSV file. The markdown cell explains the task, and the code cell proves the task has been completed.
+
+Code cells and markdown cells work best together. Code cells provide the practical output, while markdown cells provide the explanation and context. Without code cells, the notebook would only be written notes and would not prove that Python ran. Without markdown cells, the notebook might still run, but it would be harder to understand. A strong Jupyter Notebook uses both types of cell so the work is clear, practical and suitable for evidence. This combination is what makes a notebook different from a simple script or a plain written document. In a good evidence notebook, the markdown cell introduces the aim, the code cell carries out the practical Python work, and the output proves the result. This makes the work easier to mark because the assessor does not have to guess what the code is meant to show. It also helps me check my own work because I can read the explanation, rerun the code and compare the output with the task requirements. This makes the notebook clearer and more reliable.
+
+Q3. What is the purpose of magic commands ("magics") in Jupyter Notebooks (2.3)?
+Target used: 500-600 words.
+
+Magic commands, often called magics, are special commands that can be used inside Jupyter Notebooks to control, inspect or improve the notebook workflow. They are not ordinary Python syntax, but Jupyter understands them and uses them to perform notebook-specific tasks. Magic commands usually begin with a percent symbol. A line magic uses one percent sign, such as %time, and applies to one line of code. A cell magic uses two percent signs, such as %%time, and applies to the whole cell.
+
+The purpose of magic commands is to make Jupyter Notebook more useful as an interactive development environment. They help with timing, testing, running files, checking variables, managing the notebook session and improving how work is displayed. For example, %time can measure how long one line of code takes to run. %%time can measure how long a whole cell takes. This is useful when working with Python libraries because some operations may take longer depending on the amount of data being processed.
+
+Magic commands are useful in a Unit 3 context because the work involves practical Python and libraries such as NumPy and Pandas. If I was loading titanic.csv with Pandas, I could use a timing magic to check how long the loading or analysis cell takes. If I was testing different ways to process data, magics could help me compare the workflow. This supports experimentation because I can test code inside the notebook without needing to leave the notebook environment.
+
+Useful examples include %time to time one command, %%time to time a whole cell, %who to list variables currently in memory, and %run filename.py to run an external Python script from inside the notebook. These commands solve practical problems. They help check speed, inspect the session and reuse code without switching tools.
+
+Another purpose of magic commands is notebook management. Some magics can list variables currently stored in memory, reset the workspace, run an external Python file, or change display settings. This is useful because notebooks can become messy if many cells have been run in different orders. Magic commands can help check what is currently active in the session and make the work more controlled.
+
+Magic commands also support evidence. A screenshot showing a magic command and its output can prove that I understand how to use Jupyter as more than a basic code editor. For example, a screenshot of %%time running on a cell would show the command, the Python code and the measured runtime. This gives extra context to the assessor because it shows both the code result and information about how the notebook handled the task.
+
+Overall, magic commands are used to extend what Jupyter Notebook can do. They help with speed checks, workflow control, testing, debugging and session management. Their purpose is to make notebook-based Python work more efficient, more informative and easier to evidence. In the Libraries for Python unit, this matters because the notebook is used not only to write code, but also to organise, test and present practical Python work.
+
+Q4. Give two or more examples of formats to which Jupyter Notebooks can be converted (2.4).
+Target used: 500-600 words total across the examples.
+
+Example 1...
+HTML is one format that a Jupyter Notebook can be converted to. HTML stands for HyperText Markup Language and is the format used for web pages. Converting a notebook to HTML is useful when the notebook needs to be viewed in a browser. The HTML version can keep headings, markdown text, code cells and outputs together in a readable web page. This is useful for evidence because the assessor can view the finished notebook content without needing to run Jupyter Notebook. It also fits well with an OG Web.site workflow because HTML is linked to web presentation. A command example is jupyter nbconvert --to html myfirstjupyternotebook.ipynb. This would create an HTML copy that can be opened and checked like a normal web page. The limitation is that the HTML file is mainly for viewing; it is not the best format if someone needs to rerun the Python code.
+
+Example 2...
+PDF is another format that a Jupyter Notebook can be converted to. A PDF is useful for formal submission, printing, archiving or keeping a fixed record of the work. Unlike a live notebook, a PDF is not normally edited or rerun. It captures the notebook in a stable document format. This can be useful for assessment because it preserves the markdown explanation, code cells and output in one file. A PDF can be opened on most devices, which makes it easier to share than a live .ipynb file. A command example is jupyter nbconvert --to pdf myfirstjupyternotebook.ipynb. The advantage of PDF is that it gives a fixed record, so the content looks the same when opened later. The limitation is that a PDF is not interactive, so it should be kept alongside the original notebook if the assessor needs the working source file.
+
+Example 3...
+A Jupyter Notebook can also be converted to a Python script with the .py extension. This is useful when I want to take the code out of the notebook and run it as a normal Python program. A notebook is good for learning, testing and showing outputs step by step, but a Python script is better when the code needs to run outside Jupyter. For example, code that loads titanic.csv or creates a Pandas DataFrame could be exported to a .py file if it needed to be reused in another project. A command example is jupyter nbconvert --to script myfirstjupyternotebook.ipynb. The advantage of a script export is that the Python code can be reused in another editor, terminal or project. The limitation is that markdown explanation and rich notebook output may not transfer in the same readable way.
+
+Other possible export formats include Markdown, LaTeX and slides. Markdown is useful for text-based documentation because it keeps the written structure simple and readable. LaTeX is useful for technical or academic documents where formatting and equations may matter. Slides are useful when notebook content needs to be presented to an audience. The important point is that conversion changes how the notebook is shared, not the original purpose of the notebook. The .ipynb file remains the working version, while the exported format can be used for a particular audience or submission requirement.
+
+Q5. Own work confirmation
+
+For the VLE confirmation box, select YES only when you are confirming that the work you submit is your own and that you have checked the answers and evidence before submission.
