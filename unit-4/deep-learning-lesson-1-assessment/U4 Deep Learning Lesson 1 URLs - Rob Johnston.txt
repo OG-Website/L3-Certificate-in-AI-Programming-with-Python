@@ -1,0 +1,4 @@
+U4 Deep Learning Lesson 1 URLs
+
+GitHub folder:
+https://github.com/OG-Website/L3-Certificate-in-AI-Programming-with-Python/tree/main/unit-4/deep-learning-lesson-1-assessment
