@@ -1,0 +1,10 @@
+Assessment 1 - Vectors Evidence URLs
+
+GitHub evidence folder:
+https://github.com/OG-Website/L3-Certificate-in-AI-Programming-with-Python/tree/main/unit-4/assessment-1-vectors-evidence
+
+Jupyter Notebook:
+https://github.com/OG-Website/L3-Certificate-in-AI-Programming-with-Python/blob/main/unit-4/assessment-1-vectors-evidence/Assessment%201%20-%20Vector%20Calculations%20Evidence.ipynb
+
+Python file:
+https://github.com/OG-Website/L3-Certificate-in-AI-Programming-with-Python/blob/main/unit-4/assessment-1-vectors-evidence/vector_calculations_evidence.py

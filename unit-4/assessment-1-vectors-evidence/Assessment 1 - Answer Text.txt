@@ -1,0 +1,63 @@
+Q1. Outline what a vector is and explain how vectors relate to tensors (1.1).
+
+A vector is a mathematical object that contains values in an ordered list. The values are usually numbers, and each value is called a component or element of the vector. A simple example is [4, 3]. This can represent movement of four units in one direction and three units in another direction. In linear algebra, a vector can represent size and direction, but in programming and artificial intelligence it can also represent structured data. For example, a learner profile, a set of scores, a word embedding, image pixel values or model inputs can all be represented as vectors.
+
+A vector is different from a single number because it stores more than one related value. A single value is called a scalar, while a vector is one-dimensional. In Python, a vector can be represented with a list, but NumPy arrays are normally better for numerical vector work because they support mathematical operations directly. In the Unit 4 evidence notebook, I create vectors as NumPy arrays so I can calculate shape, magnitude, addition, scalar multiplication and dot product.
+
+Vectors also relate to tensors. A tensor is a general structure for numerical data. A scalar can be seen as a zero-dimensional tensor, a vector can be seen as a one-dimensional tensor, and a matrix can be seen as a two-dimensional tensor. Higher-dimensional tensors can represent more complex data, such as colour images, batches of data, or deep learning model inputs. This is important for deep learning because models often process tensors, but the basic ideas start with vectors. Understanding vectors makes it easier to understand later matrix and tensor operations.
+
+In Python AI programming, vectors help turn real-world information into numerical form. A model cannot directly understand words, images or categories unless they are represented as numbers. Vectors provide one way to structure those numbers so the program can compare, calculate and learn from them.
+
+Word count: 309 words
+
+Q2. Describe the purpose of vector transpose (1.2).
+
+The purpose of vector transpose is to change the orientation of a vector. In linear algebra, a vector can be written as a row vector or a column vector. A row vector is written horizontally, for example [4, 3], while a column vector is written vertically, with each value on a separate row. Transpose changes a row vector into a column vector, or a column vector into a row vector. The values stay the same, but the shape and orientation change.
+
+This is important because many linear algebra operations depend on shape. If the shapes do not match, the calculation may not be valid. For example, matrix multiplication has rules about the number of rows and columns. Transpose helps arrange vectors so they can be multiplied or combined correctly. In programming terms, this means transpose can prevent shape errors and make the intention of the calculation clearer.
+
+In NumPy, a one-dimensional array such as np.array([4, 3]) does not behave exactly like a row or column matrix because it only has one dimension. To show transpose properly, I create a two-dimensional row vector with shape (1, 2), then transpose it to a column vector with shape (2, 1). In the Unit 4 notebook, the row vector [[4, 3]] is transposed to [[4], [3]]. The values do not change, but the layout does.
+
+This matters in AI programming because vectors are often used inside matrix calculations. Inputs, weights and outputs need compatible shapes. A transpose operation can make a vector suitable for multiplication, projection or later matrix work. It is a simple operation, but it supports correct structure in larger mathematical processes.
+
+Word count: 270 words
+
+Q3. Outline how to calculate the magnitude and direction of a vector (1.3).
+
+The magnitude of a vector is its length or size. For a two-dimensional vector [x, y], the magnitude is calculated using the square root of x squared plus y squared. This comes from Pythagoras' theorem because the vector can be treated like the diagonal of a right-angled triangle. For example, if the vector is [4, 3], the magnitude is square root of 4 squared plus 3 squared. That is square root of 16 plus 9, which is square root of 25, so the magnitude is 5.
+
+In Python, NumPy can calculate the same result using np.linalg.norm(vector). This is useful because the same function can work with vectors that have more than two components. In the Unit 4 notebook, I use np.linalg.norm() to calculate the magnitude of the vector [4, 3]. The output proves that the magnitude is 5.0.
+
+The direction of a two-dimensional vector can be described as an angle from the positive x-axis. The angle can be calculated using arctan2(y, x). This is better than a simple tangent calculation because arctan2 handles the signs of x and y correctly and places the angle in the correct quadrant. In Python, np.arctan2(y, x) returns the angle in radians. I then use np.degrees() to convert the value into degrees, which is easier to read in an assessment explanation.
+
+For the vector [4, 3], the angle is approximately 36.87 degrees. This means the vector points upward and to the right. Magnitude and direction are useful because they explain not only the values inside the vector, but also what the vector represents geometrically. In AI and data work, magnitude can also help compare the size of vectors, and direction can help compare similarity or orientation.
+
+Word count: 302 words
+
+Q4. Explain vector addition and multiplication using examples (1.4).
+
+Vector addition combines vectors by adding matching components. The vectors must normally have the same shape. For example, if vector a is [4, 3] and vector b is [1, 2], then a plus b is [5, 5]. The first components are added together, giving 4 plus 1, and the second components are added together, giving 3 plus 2. This is useful when two movements, measurements or sets of features need to be combined.
+
+In Python, NumPy can add vectors directly with a + b. This is clearer than writing a loop because the operation is applied to the whole array. In the Unit 4 notebook, I create two vectors and add them. The output shows [5, 5], which proves the addition worked component by component.
+
+Vector multiplication can mean different things, so the method must be clear. One type is scalar multiplication. This means multiplying every component of a vector by one number. For example, 2 multiplied by [4, 3] gives [8, 6]. The vector keeps the same direction if the scalar is positive, but its magnitude changes. This is useful when values need to be scaled up or down.
+
+Another type is dot product. The dot product multiplies matching components and then adds the results. For vectors [4, 3] and [1, 2], the dot product is 4 times 1 plus 3 times 2. That gives 4 plus 6, so the dot product is 10. In AI and data work, dot products are important because they are used in weighted sums, similarity calculations and neural network layers.
+
+NumPy supports these operations directly. Scalar multiplication can be written as 2 * vector_a, and dot product can be written as np.dot(vector_a, vector_b). These examples show that vectors are not just theory; they are practical structures used in Python calculations.
+
+Word count: 315 words
+
+Q5. Describe how vectors support programming with Python (1.5).
+
+Vectors support programming with Python because they provide a structured way to store and process numerical data. Python can store values in a normal list, but lists are general-purpose structures. For mathematical work, a vector represented as a NumPy array is usually more useful because it supports direct numerical operations. A programmer can add vectors, multiply by scalars, calculate dot products, find magnitude, reshape data and pass the result into other libraries.
+
+In AI programming, data must usually be converted into numbers before a model can use it. Vectors help with this because they can represent features. For example, a row of input data might contain age, score, time, price or measurement values. A text system might represent a word as an embedding vector. An image system might represent pixels as numerical arrays. Once the data is in vector form, Python can calculate with it.
+
+Vectors also support efficient code. With NumPy, operations can be applied to a whole vector at once. This is shorter and clearer than writing repeated loops for every value. It also links to the Unit 3 work, where NumPy ndarrays were created and saved, and Pandas data was structured for analysis. Unit 4 builds on that by explaining the mathematical meaning behind the numerical structures.
+
+Vectors are also important for deep learning because neural networks rely on linear algebra. Inputs, weights and outputs are often stored as vectors, matrices or higher-dimensional tensors. A simple neural network calculation may involve multiplying an input vector by weights, adding bias values and passing the result through an activation function. This means vector operations are part of the foundation for how AI models calculate predictions.
+
+In my Unit 4 evidence notebook, the vector calculations are shown using NumPy. The code creates vectors, checks their shapes, transposes a row vector, calculates magnitude and direction, adds vectors, scales a vector and calculates a dot product. This shows how vectors support practical Python programming, not only written theory.
+
+Word count: 323 words
