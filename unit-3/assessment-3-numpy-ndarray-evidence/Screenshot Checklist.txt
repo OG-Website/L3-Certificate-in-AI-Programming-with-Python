@@ -1,0 +1,9 @@
+01_notebook_open.png - Jupyter Notebook open with Assessment 3 - NumPy ndarray Evidence.ipynb visible.
+02_import_numpy.png - Code cell showing import numpy as np.
+03_create_ndarray.png - Code and output showing the ndarray created.
+04_check_ndarray_properties.png - Code and output showing shape, ndim, size and dtype.
+05_save_ndarray_files.png - Code showing np.savetxt() and np.save().
+06_saved_files_visible.png - File Explorer or Jupyter file browser showing og_unit3_scores_ndarray.txt, og_unit3_scores_ndarray.csv and og_unit3_scores_ndarray.npy.
+07_load_saved_ndarray.png - Code and output showing np.loadtxt() and np.load() loading the saved files back.
+08_github_uploaded_files.png - GitHub folder showing the notebook and saved ndarray files uploaded.
+09_github_notebook_url.png - GitHub notebook page with the notebook URL visible.
