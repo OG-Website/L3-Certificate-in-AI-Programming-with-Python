@@ -16,21 +16,21 @@ In this assessment, I use NumPy in Jupyter Notebook to create a two-dimensional 
 
 Word count: 627 words
 
-Q2. Describe two or more benefits of using NumPy
+Q2. Describe two or more benefits of using NumPy (3.2).
 
-One benefit of using NumPy is efficiency. NumPy arrays are designed for numerical processing, so they are usually faster and more suitable for calculations than standard Python lists. A normal Python list can store mixed types of objects, but that flexibility also means it is not specialised for mathematical operations. A NumPy ndarray stores data in a more regular structure and can apply operations across the whole array. For example, if I have two arrays with matching shapes, NumPy can add the values together element by element without me writing a manual loop for each position. This makes numerical code shorter and easier to read.
+Benefit 1 - Faster numerical processing
 
-A second benefit is that NumPy gives data a clear structure. An ndarray has properties such as shape, ndim, size and dtype. These help me understand what data I am working with before I process or save it. Shape tells me the layout of the data, such as two rows and three columns. ndim tells me whether the array is one-dimensional, two-dimensional or higher-dimensional. Size tells me the total number of values, and dtype tells me the data type. This is useful evidence in Jupyter Notebook because I can print these properties and show that the array has been created correctly.
+One benefit of using NumPy is efficiency. NumPy arrays are designed for numerical processing, so they are usually faster and more suitable for calculations than standard Python lists. A normal Python list can store mixed types of objects, but that flexibility also means it is not specialised for mathematical operations. A NumPy ndarray stores data in a more regular structure and can apply operations across the whole array. For example, if I have two arrays with matching shapes, NumPy can add the values together element by element without me writing a manual loop for each position. This makes numerical code shorter, clearer and easier to read. In the Assessment 3 notebook, the ndarray stores the score values together in one structure, which means the data can be checked, saved and loaded as one array rather than managed as separate variables.
 
-A third benefit is that NumPy supports saving and reusing numerical data. With np.savetxt(), an ndarray can be saved as a readable text or CSV-style file. With np.save(), the same ndarray can be saved in NumPy's own .npy format. This is helpful because the data does not disappear when the notebook closes. It becomes a file that can be uploaded, stored, checked or used again later. In Assessment 3, I save the ndarray as .txt, .csv and .npy files, then load those files back into Python. That proves the save process worked.
+Benefit 2 - Clear array structure and useful properties
 
-A fourth benefit is that NumPy works well with other Python libraries. Pandas can create Series or DataFrames from NumPy data, and many data science, machine learning and statistical libraries rely on NumPy-style arrays. This makes NumPy a useful foundation for wider Python programming. It helps connect basic Python code to more advanced data work.
+A second benefit is that NumPy gives data a clear structure. An ndarray has properties such as shape, ndim, size and dtype. These help me understand what data I am working with before I process or save it. Shape tells me the layout of the data, such as two rows and three columns. ndim tells me whether the array is one-dimensional, two-dimensional or higher-dimensional. Size tells me the total number of values, and dtype tells me the data type. This is useful evidence in Jupyter Notebook because I can print these properties and show that the array has been created correctly. It also helps prevent mistakes because I can check the array structure before using it in calculations or saving it to files.
 
-NumPy also makes code more consistent and professional. Instead of using separate variables for every value, I can store related values together in one ndarray. The code is easier to explain because the array has a name, a structure and a data type. In a notebook, I can add comments or markdown beside each step, then show the output underneath the code. This makes the assessment evidence clearer because the assessor can see what the array is, how it was created, how it was saved and how it was loaded back.
+Benefit 3 - Saving, reusing and sharing data
 
-Overall, the main benefits of NumPy are faster numerical processing, clearer array structure, useful saving and loading tools, and strong compatibility with other Python data libraries. These benefits are why NumPy is used for practical array work in Unit 3.
+A third benefit is that NumPy supports saving and reusing numerical data. With np.savetxt(), an ndarray can be saved as a readable text or CSV-style file. With np.save(), the same ndarray can be saved in NumPy's own .npy format. This is helpful because the data does not disappear when the notebook closes. It becomes a project file that can be uploaded, stored, checked or used again later. In Assessment 3, I save the ndarray as .txt, .csv and .npy files, then load those files back into Python. That proves the save process worked. This also supports the GitHub evidence because the saved files can be included beside the notebook and opened or checked by the assessor.
 
-Word count: 527 words
+Word count for Q2 total: 506 words
 
 Q3. Use the third-party library NumPy, to create and save an ndarray (Unit J/650/0758 4.1, 4.3). Ensure you explain how to create and save ndarrays within the comments, or using markdown cells in Jupyter Notebook (3.3).
 
