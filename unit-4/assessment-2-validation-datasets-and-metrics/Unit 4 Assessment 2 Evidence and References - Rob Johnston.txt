@@ -1,0 +1,100 @@
+Unit 4 Assessment 2 Evidence and References
+
+Rob Johnston
+
+
+
+Where this goes:
+
+The VLE quiz answer boxes only need the assessment answers. This evidence map stays with the branded answer sheet as supporting proof. If the VLE gives a file-upload area or the assessor asks for supporting evidence, upload this document with the answer sheet. If the VLE is answer-box only, keep this in the Unit 4 folder and GitHub repo as the evidence trail.
+
+
+
+Evidence map:
+
+
+
+Evidence / reference: Public website
+
+Location: https://www.tradeathem.co.uk/
+
+What this proves: Shows Trade-A-Them as a public portfolio project and gives the assessor a public-facing project link.
+
+
+
+Evidence / reference: Public technology page
+
+Location: https://www.tradeathem.co.uk/pages/technology
+
+What this proves: Supports the written explanation of the 4-engine AI trading platform and MENTAL machine-learning engine.
+
+
+
+Evidence / reference: Public features page
+
+Location: https://www.tradeathem.co.uk/pages/features
+
+What this proves: Supports the continuous-learning and machine-learning context used in the validation answers.
+
+
+
+Evidence / reference: MENTAL engine source
+
+Location: C:\OGBuild\Trade a them\Trade-A-Them-Owners-Edition\src\trading\mental_engine.py
+
+What this proves: Code evidence for training data, train/test split, model fitting, test accuracy and live accuracy tracking.
+
+
+
+Evidence / reference: LSTM predictor source
+
+Location: C:\OGBuild\Trade a them\Trade-A-Them-Owners-Edition\models\advanced_ml\lstm_predictor.py
+
+What this proves: Evidence for validation split, validation loss monitoring, early stopping and best-checkpoint saving in a deep-learning model.
+
+
+
+Evidence / reference: Transformer predictor source
+
+Location: C:\OGBuild\Trade a them\Trade-A-Them-Owners-Edition\models\advanced_ml\transformer_predictor.py
+
+What this proves: Evidence for Transformer training with validation split, validation loss, optimiser and model metrics.
+
+
+
+Evidence / reference: Model trainer source
+
+Location: C:\OGBuild\Trade a them\Trade-A-Them-Owners-Edition\models\advanced_ml\model_trainer.py
+
+What this proves: Evidence for model comparison, ensemble weighting and validation-loss-based performance handling.
+
+
+
+Evidence / reference: ML/data audit
+
+Location: C:\OGBuild\Trade a them\Trade-A-Them-Owners-Edition\audits\2026-06-24\2026-06-24_AGENT_2_ML_DATA_AUDIT.md
+
+What this proves: Safe audit evidence for model state, training sample count, label mix and why validation/testing matters.
+
+
+
+Evidence / reference: Safe model summary
+
+Location: C:\OGBuild\Trade a them\Trade-A-Them-Owners-Edition\data\mental_ml_model.pkl and data\trades.json
+
+What this proves: Safe counted summary only: trained model, 204 training samples, 756 trades, 273 with indicators. The raw private data is not submitted.
+
+
+
+Evidence / reference: Course repo path
+
+Location: unit-4/assessment-2-validation-datasets-and-metrics
+
+What this proves: Cloud copy of the submitted assessment materials in the college GitHub repository.
+
+
+
+Private-data note:
+
+No account credentials, live account values, private emails, authentication details or raw private trading records are included in this evidence map.
+
