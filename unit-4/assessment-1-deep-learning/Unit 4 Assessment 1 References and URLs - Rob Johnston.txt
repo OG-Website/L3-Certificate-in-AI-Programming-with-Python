@@ -1,0 +1,26 @@
+References and URLs used
+
+
+
+Public website: https://www.tradeathem.co.uk/
+
+Public technology page: https://www.tradeathem.co.uk/pages/technology
+
+Public features page: https://www.tradeathem.co.uk/pages/features
+
+Local evidence: C:\OGBuild\Trade a them\Trade-A-Them-Owners-Edition\README.md
+
+Local evidence: C:\OGBuild\Trade a them\Trade-A-Them-Owners-Edition\website\website\pages\technology.html
+
+Local evidence: C:\OGBuild\Trade a them\Trade-A-Them-Owners-Edition\algorithms\nova_engine.py
+
+Local evidence: C:\OGBuild\Trade a them\Trade-A-Them-Owners-Edition\src\trading\mental_engine.py
+
+Local evidence: C:\OGBuild\Trade a them\Trade-A-Them-Owners-Edition\models\advanced_ml\lstm_predictor.py
+
+Local evidence: C:\OGBuild\Trade a them\Trade-A-Them-Owners-Edition\models\advanced_ml\transformer_predictor.py
+
+Local evidence: C:\OGBuild\Trade a them\Trade-A-Them-Owners-Edition\audits\2026-06-24\2026-06-24_AGENT_2_ML_DATA_AUDIT.md
+
+Course repo path: unit-4/assessment-1-deep-learning
+

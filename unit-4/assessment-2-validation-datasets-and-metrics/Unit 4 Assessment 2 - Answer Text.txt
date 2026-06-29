@@ -1,0 +1,97 @@
+OG Web.site Unit 4 Assessment 2 Validation Metrics Answer Sheet
+
+Rob Johnston
+
+
+
+Testing Datasets, Validation Datasets, Validation Loss and Validation Accuracy
+
+
+
+Q1. What is the difference between testing datasets and validation datasets?
+
+
+
+Testing datasets and validation datasets are both used to check machine learning performance, but they are used at different stages. The training dataset is the data the model learns from. The validation dataset is used during development to guide decisions about the model. The testing dataset is kept separate until the end and is used to judge the finished model. The difference matters because a model can look strong on familiar data but fail when it sees new data.
+
+
+
+A validation dataset acts like a practice check while the model is still being built. After training on the training data, the model is evaluated on validation data that was not used directly to update the weights. The validation result helps the developer decide whether to change the model. For example, the developer might alter the learning rate, change the number of layers, adjust the batch size, use early stopping, change the feature set or train for fewer epochs. Because the validation result influences development choices, validation data is part of the model-building process.
+
+
+
+A testing dataset has a different purpose. It should be held back until the model is finished. Its role is to provide a final, fair estimate of how well the completed model performs on unseen data. If the testing data is used repeatedly during tuning, it stops being a fair test because the model choices have already been shaped around it. The testing set should therefore be treated like the final assessment, not like practice material.
+
+
+
+My Trade-A-Them project makes this easier to understand because it has real data rather than only classroom examples. The active ML model file contains a trained GradientBoostingClassifier with 204 training samples. The wider trade history contains 756 trades, including 273 records with indicator data. The stored labels currently show both negative and positive outcomes, which is the kind of data split that needs careful handling. In that situation, a validation dataset would help tune the model safely, while a testing dataset would give the final performance check.
+
+
+
+This links to the public Trade-A-Them website and technology page because they show the project as a multi-engine AI trading platform with 39+ algorithms, including the 20-algorithm NOVA engine and the MENTAL machine-learning engine. As an individual developer, that is useful evidence because it shows I have designed data-led systems, not just written isolated scripts. However, the model evidence must still be presented honestly. I would not use private account details or credentials. I would show safe figures such as model type, sample counts, public website links, audit notes and non-sensitive training summaries.
+
+
+
+For deep learning, the same principle applies to the LSTM and Transformer predictor modules in Trade-A-Them. The training set would teach the model from historical sequences. The validation set would help monitor model choices and stop overfitting. The testing set would provide the final check after tuning. Overall, validation data helps improve the model during development, while testing data judges the finished model.
+
+
+
+Word count: 504 words
+
+
+
+Q2. Describe the purpose of validation loss and validation accuracy during the training stage.
+
+
+
+Validation loss and validation accuracy are metrics used during training to check how well a model performs on validation data. They are important because training results alone can be misleading. A model may perform well on training data because it has learned useful patterns, but it may also perform well because it has memorised the examples. Validation metrics help show whether the model is likely to generalise to new data.
+
+
+
+Validation loss measures the size of the model's error on the validation dataset. It uses the same type of loss function as the training process. For example, a regression model might use mean squared error, while a classification model might use cross-entropy. A lower validation loss usually means the model's predictions are closer to the correct answers. If training loss keeps falling but validation loss starts rising, this can indicate overfitting. The model may be getting better at the training examples but worse at unseen data.
+
+
+
+Validation accuracy measures how often the model predicts the correct class on the validation dataset. It is easier to understand than loss because it describes correct predictions directly. For example, if a model correctly classifies 85 out of 100 validation examples, the validation accuracy is 85 percent. However, accuracy is not always enough by itself. If the data is unbalanced, a model can appear accurate by mostly predicting the common class. In those cases, precision, recall, F1 score, confusion matrices or calibration checks may also be needed.
+
+
+
+Trade-A-Them gives me a real example to reference. The active MENTAL model stores test accuracy and live accuracy tracking, and the June audit evidence showed a trained GradientBoostingClassifier using real trade-derived features and labels. The local model state contains 204 training samples and live prediction counters. That shows why validation metrics matter: a headline accuracy number is not enough unless the dataset, label balance and live sample count are understood. This is exactly the kind of mature explanation that sells my work properly, because it shows I understand the difference between building a model and proving that it is reliable.
+
+
+
+The deep learning modules in Trade-A-Them also use validation loss directly. The LSTM predictor trains with a validation split, monitors `val_loss`, uses early stopping and saves the best model checkpoint. The Transformer predictor follows the same idea, monitoring validation loss while training a deeper attention-based sequence model. In those modules, validation loss would show whether the neural network is improving on unseen validation data, while validation accuracy or related metrics would show whether predictions are useful for the task.
+
+
+
+For my OG Web.site evidence style, I would show validation loss and validation accuracy in a notebook, chart, audit table or model report. I would also include public-safe references such as the Trade-A-Them website, the technology page, model code and safe model statistics. Overall, validation loss measures error, validation accuracy measures correct predictions, and together they help decide whether training is producing a model that can generalise.
+
+
+
+Word count: 501 words
+
+
+
+References Used
+
+
+
+Public website: https://www.tradeathem.co.uk/
+
+Public technology page: https://www.tradeathem.co.uk/pages/technology
+
+Public features page: https://www.tradeathem.co.uk/pages/features
+
+Local evidence: C:\OGBuild\Trade a them\Trade-A-Them-Owners-Edition\src\trading\mental_engine.py
+
+Local evidence: C:\OGBuild\Trade a them\Trade-A-Them-Owners-Edition\models\advanced_ml\lstm_predictor.py
+
+Local evidence: C:\OGBuild\Trade a them\Trade-A-Them-Owners-Edition\models\advanced_ml\transformer_predictor.py
+
+Local evidence: C:\OGBuild\Trade a them\Trade-A-Them-Owners-Edition\models\advanced_ml\model_trainer.py
+
+Local evidence: C:\OGBuild\Trade a them\Trade-A-Them-Owners-Edition\audits\2026-06-24\2026-06-24_AGENT_2_ML_DATA_AUDIT.md
+
+Local evidence: safe model summary counted from data\mental_ml_model.pkl and data\trades.json
+
+Course repo path: unit-4/assessment-2-validation-datasets-and-metrics

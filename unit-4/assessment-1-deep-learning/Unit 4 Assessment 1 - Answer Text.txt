@@ -1,0 +1,191 @@
+OG Web.site Unit 4 Assessment 1 Deep Learning Answer Sheet
+
+Rob Johnston
+
+
+
+Deep Learning, Gradient Descent, Calculus and Derivatives
+
+
+
+Q1. What is deep learning?
+
+
+
+Deep learning is a branch of artificial intelligence and machine learning that uses neural networks with multiple layers to learn patterns from data. A normal rule-based program follows instructions written by a developer, but a deep learning model learns from examples. It receives data, makes a prediction, compares that prediction with the correct answer and adjusts its internal parameters so future predictions become more accurate. The word deep refers to the layers between the input and output. Each layer transforms the data and passes a more useful representation to the next layer.
+
+
+
+A neural network is made from connected artificial neurons. Each neuron receives input values, multiplies them by weights, adds a bias value and passes the result through an activation function. Activation functions are important because they allow the model to learn non-linear patterns rather than only simple straight-line relationships. In image work, early layers may detect edges, shapes or colour changes, while later layers combine those details into more meaningful features. In sequence work, such as price or time-series data, a model can learn how earlier values relate to later outcomes.
+
+
+
+Deep learning is useful when the data is complex and the rules are hard to write manually. It is used in computer vision, natural language processing, speech recognition, medical imaging, recommendation systems, fraud detection and market forecasting. For example, an LSTM network can learn from sequences, which makes it suitable for time-series data. A Transformer network can use attention mechanisms to learn which parts of a sequence matter most. These models are more advanced than ordinary scripts because they learn patterns from data instead of relying only on fixed if-statements.
+
+
+
+My Trade-A-Them project is the strongest example from my own work because it shows that I am not only studying AI theory, but designing AI and data-led systems. The public Trade-A-Them website presents the platform as an advanced AI-powered cryptocurrency trading bot with 39+ algorithms, machine learning and multi-engine consensus trading. The technology page describes 4 AI trading engines: NOVA, GENIUS, OMEGA and MENTAL. Within that, I designed a NOVA engine with 20 different algorithmic approaches, including quantum-inspired modelling, chaos theory attractors, Bayesian belief networks, genetic algorithm evolution, Nash equilibrium analysis and neuromorphic pattern recognition. That is useful portfolio evidence because it shows independent system design, not just classroom examples.
+
+
+
+The verified local Trade-A-Them data also gives a real applied context. The active MENTAL engine uses a scikit-learn GradientBoostingClassifier with continuous learning. The current model file is trained, contains 204 training samples, and the wider trade history contains 756 trades, including 273 records with indicator data. That is not something I would expose with private account details or credentials, but it is safe to describe as evidence that I have built a data-driven trading system with model training, stored features, labels, test accuracy, live accuracy tracking and audit reports.
+
+
+
+The deep learning part is also represented in the Trade-A-Them advanced ML code. The project includes an LSTM predictor and a Transformer predictor for cryptocurrency price prediction. The LSTM model uses TensorFlow/Keras layers such as LSTM, Dropout, BatchNormalization and Dense. The Transformer model uses multi-head attention, layer normalisation and feed-forward blocks. These are deep learning architectures because they use layered neural network structures to process sequential market data.
+
+
+
+This also shows why deep learning needs a professional evidence approach. A public website claim is useful, but the stronger evidence is the code structure, the model state, the training records and the audit trail behind it. I can explain the project as a developer who designed the algorithms, built the website, organised the data, connected the model process and created documentation around the system. That sells me as an individual because it links the theory to a working portfolio project.
+
+
+
+For Unit 4, this matters because deep learning is not just a definition. It connects to a real development pathway: collect data, prepare features, train a model, validate performance, track error and explain the results. In my OG Web.site evidence style, I would show this through code, model files, audit notes, public website links, screenshots and a clear written explanation. Overall, deep learning is a powerful AI method because it allows computers to learn complex patterns from data, and my Trade-A-Them work shows how those ideas can be connected to a real multi-engine AI system.
+
+
+
+Word count: 742 words
+
+
+
+Q2. What is gradient descent, why is it important and what are its benefits?
+
+
+
+Gradient descent is an optimisation method used to reduce the error of a machine learning or deep learning model. When a model is trained, it makes predictions and compares them with the correct answers. The difference is measured by a loss function. Gradient descent is the process of adjusting the model's weights so that the loss becomes smaller over time. It works by calculating the gradient, which shows the direction in which the loss increases most steeply, then moving the model parameters in the opposite direction.
+
+
+
+A simple way to explain gradient descent is to imagine trying to walk down a hill in fog. You cannot see the whole landscape, but you can feel the slope beneath your feet. If the ground rises in one direction, you step the other way. After each step, you check the slope again and keep moving until you reach a lower point. In deep learning, the hill is the loss landscape, the current position is the model's current set of weights, and each step is a training update.
+
+
+
+Gradient descent is important because deep learning models can contain thousands, millions or billions of parameters. It is not possible for a programmer to manually choose the best value for every weight. The model needs a mathematical process for improving itself from data. Gradient descent provides that process. It uses derivatives to work out how each weight affects the loss, then updates the weights through an optimiser. The learning rate controls the size of each update. If it is too high, the model may overshoot the best solution. If it is too low, training can be slow.
+
+
+
+The benefits are practical. First, gradient descent gives a structured way to reduce error. Second, it scales to large datasets and complex neural networks. Third, it produces evidence that can be measured, such as training loss and validation loss over epochs. Fourth, it supports modern optimisers such as Adam, RMSprop and AdaGrad, which build on the same basic idea but improve the way updates are handled.
+
+
+
+In my Trade-A-Them work, the active live ML pathway uses a GradientBoostingClassifier rather than a neural-network optimiser, but the wider project also contains deep learning modules where gradient descent is directly relevant. The LSTM predictor is compiled with the Adam optimiser, a mean squared error loss function and mean absolute error metrics. The Transformer predictor is compiled with Adam, Huber loss and validation-loss tracking. Those model files show exactly where gradient-based optimisation would be used in a deep learning version of the system.
+
+
+
+Trade-A-Them also shows why gradient descent needs to be measured carefully. The system is not a toy example. It has 4 AI trading engines, 39+ strategies and a NOVA engine where I designed 20 different algorithmic approaches. It has historical trade data, model training samples, test accuracy, live accuracy tracking and audit notes. In that kind of system, a model cannot just be described as intelligent. It needs evidence that training is reducing error and that validation results are not being ignored.
+
+
+
+If I trained the LSTM or Transformer modules on Trade-A-Them price sequences, gradient descent would update the neural network weights based on prediction error. If the model predicted a future price movement incorrectly, the loss function would quantify that error. Backpropagation would calculate how the error flowed through the layers, and the optimiser would adjust the weights. In my OG Web.site evidence pack, I would show the public website links, the model code, the training outputs, the loss chart and the validation results. Overall, gradient descent is important because it turns repeated model errors into controlled learning steps, which is essential for deep learning.
+
+
+
+Word count: 616 words
+
+
+
+Q3. Give a general description of how calculus supports deep learning. Ensure you cover backpropagation.
+
+
+
+Calculus supports deep learning because it provides the mathematics for measuring change. A deep learning model learns by changing its weights and biases during training. After the model makes a prediction, the loss function measures how wrong the prediction is. The model then needs to know how each parameter contributed to that error and how each parameter should change to reduce it. Calculus gives the training process the tools to measure those relationships.
+
+
+
+The main calculus concept used in deep learning is the derivative. A derivative measures the rate of change of one value in relation to another. In model training, the important question is often: if this weight changes slightly, how much does the loss change? If increasing a weight increases the loss, the optimiser can reduce that weight. If changing another weight has a strong effect on the loss, the optimiser can update it more carefully.
+
+
+
+Backpropagation is the key process that uses calculus across a neural network. During the forward pass, data moves through the layers and the model produces an output. The output is compared with the correct answer and a loss value is calculated. During the backward pass, backpropagation sends the error information backwards through the network. It uses the chain rule from calculus to calculate how much each weight and bias contributed to the final error.
+
+
+
+The chain rule matters because a neural network is a chain of connected calculations. A weight in an early layer affects the next layer, which affects later layers, which then affects the final output. Backpropagation breaks this into smaller derivative calculations and combines them efficiently. Without this, training deep networks would be too slow and impractical because each parameter would have to be tested manually.
+
+
+
+In my Trade-A-Them project, this connects to the advanced ML code. The active live model uses scikit-learn GradientBoosting, but the project also includes LSTM and Transformer predictors for cryptocurrency price prediction. If those neural network modules are trained, TensorFlow/Keras handles the gradient calculations automatically. The LSTM model uses sequential layers, and the Transformer uses attention blocks, dense layers and normalisation. Underneath those library calls, calculus is still being used to calculate gradients, apply backpropagation and update parameters through the optimiser.
+
+
+
+This is also a good way to sell my own practical understanding. Trade-A-Them is not just a single notebook. It is a developed AI trading system with public website pages, 4 AI engines, a 20-algorithm NOVA engine, historical trade data, saved ML model state, training samples and audit reports. Calculus is the theory that explains how the deep learning parts would learn from that data. It also proves that I understand the connection between a portfolio build and the mathematical training process behind AI.
+
+
+
+In an OG Web.site evidence document, I would show the code, training process, validation loss, loss curves and model outputs, then explain how backpropagation is reducing error. Overall, calculus supports deep learning by making it possible to calculate gradients, run backpropagation and train neural networks in a controlled way.
+
+
+
+Word count: 508 words
+
+
+
+Q4. What is a derivative (slope), its purpose and why do we need them in deep learning?
+
+
+
+A derivative is a measure of how one value changes in relation to another value. It is often described as the slope of a function at a specific point. On a straight line, the slope is constant, but on a curve the slope changes from point to point. The derivative gives the instantaneous rate of change at one point. If the derivative is positive, the function is increasing. If it is negative, the function is decreasing. If it is close to zero, the function may be flattening out.
+
+
+
+The purpose of a derivative is to explain direction and size of change. Derivatives are used in science, engineering, economics and computing wherever one value changes because of another. In optimisation, derivatives are especially important because they help find lower or higher points on a function. In deep learning, the function being optimised is usually the loss function. The aim is to reduce the loss so the model's predictions become closer to the correct answers.
+
+
+
+Deep learning needs derivatives because a neural network has many weights and biases. When the model gives a wrong prediction, the loss function says how wrong it was, but that is not enough by itself. The model also needs to know which weights were responsible for the error and how those weights should change. The derivative of the loss with respect to a weight tells the model how changing that weight would affect the loss. A gradient is a collection of these derivative values across many parameters.
+
+
+
+Gradient descent uses derivatives directly. The gradient points in the direction where the loss increases most strongly. Because training wants to reduce loss, the optimiser moves the weights in the opposite direction. This is repeated many times. Derivatives therefore provide the mathematical direction for learning. Without them, the model would be changing weights randomly or relying on guesswork, which would not scale to modern deep networks.
+
+
+
+Derivatives are also needed for backpropagation. Backpropagation calculates gradients layer by layer by sending error information backwards through the neural network. It uses the chain rule to work out how the final loss depends on each earlier layer. This allows every part of the network to improve, not only the final output layer.
+
+
+
+My Trade-A-Them project gives a real example of why this matters. I designed the platform around multiple engines and data-led decision-making, including the MENTAL ML engine and the NOVA suite of 20 different algorithms. The public website shows the 4-engine structure and the technology page presents the NOVA, GENIUS, OMEGA and MENTAL engines. Locally, the project has trained model data and deep learning modules for LSTM and Transformer prediction. In those neural network modules, derivatives would be used during training to reduce prediction error on price-movement data.
+
+
+
+For example, if an LSTM model used Trade-A-Them market sequences to predict future price change, the model output could be compared with the real later movement. The loss function would measure the error. Derivatives would show how each weight contributed to that error. Backpropagation would calculate the gradients, and the optimiser would update the weights. This would be shown in evidence through training loss, validation loss, model metrics and charts.
+
+
+
+This also links to how I present myself as an AI programming learner and developer. I can explain derivatives using a real system I built: public website, algorithm suite, model code, training data and validation evidence. That is stronger than a generic textbook answer because it shows how the maths would support my own AI project work.
+
+
+
+Overall, derivatives are needed in deep learning because they turn error into useful direction. They explain whether a parameter should increase or decrease and how strongly it affects the loss. This is why derivatives, gradients, backpropagation and gradient descent are central to training deep learning models.
+
+
+
+Word count: 637 words
+
+
+
+References Used
+
+
+
+Public website: https://www.tradeathem.co.uk/
+
+Public technology page: https://www.tradeathem.co.uk/pages/technology
+
+Public features page: https://www.tradeathem.co.uk/pages/features
+
+Local evidence: C:\OGBuild\Trade a them\Trade-A-Them-Owners-Edition\README.md
+
+Local evidence: C:\OGBuild\Trade a them\Trade-A-Them-Owners-Edition\website\website\pages\technology.html
+
+Local evidence: C:\OGBuild\Trade a them\Trade-A-Them-Owners-Edition\algorithms\nova_engine.py
+
+Local evidence: C:\OGBuild\Trade a them\Trade-A-Them-Owners-Edition\src\trading\mental_engine.py
+
+Local evidence: C:\OGBuild\Trade a them\Trade-A-Them-Owners-Edition\models\advanced_ml\lstm_predictor.py
+
+Local evidence: C:\OGBuild\Trade a them\Trade-A-Them-Owners-Edition\models\advanced_ml\transformer_predictor.py
+
+Local evidence: C:\OGBuild\Trade a them\Trade-A-Them-Owners-Edition\audits\2026-06-24\2026-06-24_AGENT_2_ML_DATA_AUDIT.md
+
+Course repo path: unit-4/assessment-1-deep-learning
