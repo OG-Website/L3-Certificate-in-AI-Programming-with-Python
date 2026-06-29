@@ -1,20 +1,42 @@
-Q1. Give a general description of the purpose of Matplotlib and Seaborn, and describe their features.
+Q1. Give a general description of the purpose of Matplotlib and Seaborn, and describe their features (5.1, 5.2).
 
-Matplotlib and Seaborn are Python libraries used for data visualisation. Their purpose is to turn data into charts and graphs so patterns, comparisons, trends and relationships can be understood more easily than by reading raw values alone. This matters in AI programming because data often needs to be explored before it is used for modelling, reporting or decision-making. A good visualisation can show whether values are increasing, whether categories are different, whether data contains outliers, or whether two variables appear to be connected.
+Matplotlib
 
-Matplotlib is a general plotting library. It provides a wide range of chart types, including line charts, bar charts, scatter plots, histograms, pie charts and more advanced custom plots. One of its main features is control. A programmer can set titles, axis labels, legends, colours, line styles, figure sizes, tick marks and export options. Matplotlib can save visualisations as image files such as PNG or PDF, and it works well in Jupyter Notebook because the chart can appear directly below the code cell. This makes it useful for evidence because the code and result can be shown together.
+The purpose...
 
-Another feature of Matplotlib is that it can be used for both quick exploration and more careful presentation work. During exploration, a simple plot can help check whether data looks sensible before more work is done. For presentation, the chart can be adjusted so the audience understands the message clearly. This includes changing the figure size, adding grid lines, choosing colours, rotating labels, setting limits on the axes and saving the finished chart for a report or evidence pack.
+Matplotlib is a Python library used to create data visualisations such as line graphs, bar charts, scatter plots, histograms and other figures. Its main purpose is to turn numerical or structured data into a visual format so patterns, comparisons, trends and unusual values can be understood more easily. In AI programming, this is useful because data often needs to be explored before it is used for modelling or decision-making. A table of numbers may be difficult to interpret quickly, but a chart can show whether values are increasing, decreasing, grouped together or spread out.
 
-Matplotlib is also flexible because it works with Python lists, NumPy arrays and Pandas DataFrames. This links directly to the earlier Unit 3 work. NumPy can store numerical data, Pandas can organise labelled table data, and Matplotlib can then present that data visually. It is especially useful when detailed control is needed over how the chart looks or when a specific type of plot must be built.
+Matplotlib is also useful because it works well with the other libraries used in Unit 3. NumPy can store numerical arrays, Pandas can organise labelled data into Series and DataFrames, and Matplotlib can display that data visually. For example, after creating a Pandas DataFrame of assessment evidence or scores, Matplotlib could be used to create a bar chart showing the values by category. This makes Matplotlib part of a practical Python data workflow, not just a drawing tool.
 
-Seaborn is also used for visualisation, but it is built on top of Matplotlib and focuses more on statistical graphics. Its purpose is to make attractive and informative visualisations with less code. Seaborn works closely with Pandas DataFrames, so it is useful when the data has column names and categories. Its features include built-in themes, colour palettes, distribution plots, categorical plots, regression plots, heatmaps and confidence interval support. This makes it useful for exploring relationships in data and presenting statistical patterns clearly.
+Word count: 173 words
 
-The main difference is that Matplotlib gives detailed low-level control, while Seaborn gives a higher-level interface with better default styling for statistical charts. In practice, they are often used together. Seaborn can quickly create a professional-looking plot, and Matplotlib can then be used to adjust titles, labels, figure size and saving options. For Unit 3, both libraries are important because they complete the data workflow: NumPy handles arrays, Pandas structures the data, and Matplotlib or Seaborn communicates the results visually. This makes the libraries useful for both technical analysis and clear assessment evidence.
+Features...
 
-Word count: 507 words
+One important feature of Matplotlib is that it gives detailed control over how a visualisation looks. A programmer can set the chart title, x-axis label, y-axis label, legend, colours, marker styles, line styles, figure size and axis limits. This is useful when the chart needs to be clear enough for evidence, reporting or presentation. Matplotlib can also export charts to file formats such as PNG and PDF, which means a finished visualisation can be saved and included in a document.
 
-Q2. Describe the features of good visualisation.
+Another feature is the wide range of plot types. Matplotlib can create line plots for trends, bar charts for category comparisons, scatter plots for relationships, histograms for distributions and many other chart types. It also works inside Jupyter Notebook, so the code and chart output can appear together. This is useful for college evidence because the assessor can see the code used to create the chart and the visual result underneath it. Matplotlib is therefore flexible, detailed and suitable for both quick exploration and more controlled final charts.
+
+Word count: 170 words
+
+Seaborn
+
+The purpose...
+
+Seaborn is a Python data visualisation library built on top of Matplotlib. Its purpose is to make statistical visualisations easier to create and easier to read. It is especially useful when working with Pandas DataFrames because Seaborn can use column names directly when creating charts. This makes it practical for exploring structured data where each column has a meaning, such as category, score, status, time or measurement.
+
+Seaborn is often used when the programmer wants to understand relationships, distributions or category differences in a dataset. For example, it can help show how values are spread, whether two variables are related, or whether one category has higher values than another. In AI programming, this supports data exploration before modelling. It helps the programmer understand the data before using it in a machine learning or deep learning workflow.
+
+Word count: 136 words
+
+Features...
+
+A main feature of Seaborn is that it provides attractive default styles and colour palettes. This means charts often look cleaner and more professional with less manual formatting. Seaborn also includes high-level plotting functions for common statistical charts, including distribution plots, categorical plots, regression plots, box plots, violin plots, pair plots and heatmaps. These features make it easier to create visualisations that explain patterns in data.
+
+Another useful feature is its close integration with Pandas. Seaborn can take a DataFrame and use named columns for the x-axis, y-axis, colour grouping or category grouping. This keeps the code readable because the chart refers to meaningful column names. Seaborn can also show statistical information such as confidence intervals in some plots. Although Seaborn is built on Matplotlib, Matplotlib can still be used afterwards to adjust titles, labels, figure size and saving options. Together, Seaborn and Matplotlib provide both easy statistical plotting and detailed control.
+
+Word count: 155 words
+
+Q2. Describe the features of good visualisation (5.3).
 
 Good visualisation should be clear, accurate, relevant and easy to interpret. Clarity is important because the viewer should be able to understand the main message without guessing what the chart means. A clear chart has a suitable title, readable labels, sensible axis names and a layout that does not distract from the data. If the chart needs a legend, the legend should be placed where it can be read easily. The visualisation should also use the right chart type for the data. For example, a line chart is useful for showing change over time, a bar chart is useful for comparing categories, and a scatter plot is useful for showing relationships between two numerical variables.
 
@@ -22,6 +44,6 @@ Accuracy is another key feature. A visualisation should represent the data hones
 
 Relevance is also important. A good visualisation should answer the question being asked and avoid unnecessary decoration. Colours, shapes and labels should support the meaning of the chart rather than make it harder to read. A chart does not need to use every possible visual feature. It should focus on the information that helps the audience understand the data. For example, if the point is to compare completion status across tasks, a simple labelled bar chart may be clearer than a complicated chart with too many colours or effects.
 
-Accessibility and consistency are also part of good visualisation. Colours should have enough contrast, and colour choices should still work for people with colour vision difficulties. Text should be large enough to read, and important information should not rely on colour alone. In a report or evidence pack, visualisations should use consistent styling so the work looks professional. Good visualisation should also include enough context for the audience to understand what they are seeing, such as units, date ranges, categories and source information where appropriate. Overall, a good visualisation presents data in a way that is truthful, readable, relevant and useful for explaining the point being made. It should help the audience understand the evidence faster than reading the raw data alone.
+Accessibility and consistency are also part of good visualisation. Colours should have enough contrast, and colour choices should still work for people with colour vision difficulties. Text should be large enough to read, and important information should not rely on colour alone. In a report or evidence pack, visualisations should use consistent styling so the work looks professional. Good visualisation should also include enough context for the audience to understand what they are seeing, such as units, date ranges, categories and source information where appropriate. Overall, a good visualisation presents data in a way that is truthful, readable, relevant and useful for explaining the point being made.
 
-Word count: 406 words
+Word count: 391 words
