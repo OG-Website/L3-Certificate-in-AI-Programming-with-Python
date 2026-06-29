@@ -1,0 +1,13 @@
+﻿Assessment 4 - Pandas Evidence URLs
+
+GitHub evidence folder:
+https://github.com/OG-Website/L3-Certificate-in-AI-Programming-with-Python/tree/main/unit-3/assessment-4-pandas-evidence
+
+Jupyter Notebook:
+https://github.com/OG-Website/L3-Certificate-in-AI-Programming-with-Python/blob/main/unit-3/assessment-4-pandas-evidence/Assessment%204%20-%20Pandas%20Series%20and%20DataFrames%20Evidence.ipynb
+
+Series Python file:
+https://github.com/OG-Website/L3-Certificate-in-AI-Programming-with-Python/blob/main/unit-3/assessment-4-pandas-evidence/pandas_series_evidence.py
+
+DataFrame Python file:
+https://github.com/OG-Website/L3-Certificate-in-AI-Programming-with-Python/blob/main/unit-3/assessment-4-pandas-evidence/pandas_dataframe_evidence.py

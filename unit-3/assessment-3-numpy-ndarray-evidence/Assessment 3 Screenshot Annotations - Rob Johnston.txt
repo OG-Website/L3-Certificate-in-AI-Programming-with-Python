@@ -1,0 +1,40 @@
+Assessment 3 Screenshot Annotations - Rob Johnston
+
+GitHub evidence folder: https://github.com/OG-Website/L3-Certificate-in-AI-Programming-with-Python/tree/main/unit-3/assessment-3-numpy-ndarray-evidence
+GitHub notebook: https://github.com/OG-Website/L3-Certificate-in-AI-Programming-with-Python/blob/main/unit-3/assessment-3-numpy-ndarray-evidence/Assessment%203%20-%20NumPy%20ndarray%20Evidence.ipynb
+
+01_notebook_open.png
+Notebook opened in Jupyter
+This screenshot shows the Assessment 3 NumPy ndarray notebook open in Jupyter. It proves that the practical work was completed in a notebook environment, not only described in written answers. The notebook title and markdown heading identify the task as Unit 3 Assessment 3 NumPy ndarray evidence. The introduction explains that the notebook will create, check, save and reload an ndarray. This gives the assessor the source context for the practical evidence and shows that the notebook includes written explanation as well as code cells.
+
+02_import_numpy.png
+NumPy imported as the third-party library
+This screenshot shows NumPy being imported with import numpy as np. The comments explain that NumPy is a third-party Python library and that it is being used to create and work with ndarray objects. This matters because the assessment question specifically asks for the use of a third-party library. The screenshot proves that the later ndarray work is based on NumPy commands, not only standard Python. It also shows that the code is commented clearly inside the notebook, which meets the requirement to explain the work using comments or markdown.
+
+03_create_ndarray.png
+ndarray created with np.array()
+This screenshot shows the ndarray being created using np.array(). The code uses a nested Python list, where each inner list becomes one row in the two-dimensional ndarray. The dtype=int argument is included so the values are stored as integers. The output underneath the cell prints the created ndarray, proving that the code ran successfully in Jupyter. This screenshot directly supports the create part of the assessment because it shows both the command used to create the ndarray and the resulting array displayed as notebook output.
+
+04_check_ndarray_properties.png
+ndarray properties checked
+This screenshot shows the ndarray properties being checked after creation. The notebook prints shape, ndim, size and dtype. Shape proves the row and column structure, ndim confirms that the ndarray is two-dimensional, size shows the total number of values, and dtype shows the data type stored in the array. This is useful because it proves the learner has not only created an ndarray but also understands how to inspect its structure. The comments in the code explain each property, meeting the requirement to explain the process inside the notebook.
+
+05_save_ndarray_files.png
+ndarray saved as TXT, CSV and NPY
+This screenshot shows the ndarray being saved using NumPy commands. np.savetxt() is used to save readable text and CSV files, while np.save() is used to save the ndarray in NumPy native .npy format. The comments explain why each save method is used. The output lists the saved filenames, which proves that the save commands ran successfully. This screenshot is important because the assessment asks for an ndarray to be created and saved, and this evidence shows the saving stage clearly in the Jupyter notebook.
+
+06_saved_files_visible.png
+saved ndarray files visible in project folder
+This screenshot shows the saved ndarray files visible in the Jupyter file browser. The files include og_unit3_scores_ndarray.txt, og_unit3_scores_ndarray.csv and og_unit3_scores_ndarray.npy. This supports the save evidence because it proves that the files were actually created on disk, not just printed in the notebook output. It also shows the notebook and supporting files together in the same Assessment 3 evidence folder. This gives the assessor a clear file trail from the notebook commands to the saved ndarray files.
+
+07_load_saved_ndarray.png
+saved ndarray files loaded back into Python
+This screenshot shows the saved ndarray files being loaded back into Python. np.loadtxt() is used for the text and CSV files, and np.load() is used for the NumPy .npy file. The output prints the loaded arrays, proving that the saved files can be reused successfully. This completes the practical evidence chain because the ndarray is created, checked, saved, and then loaded back. It proves that the save process worked correctly and that the saved files are valid NumPy evidence rather than empty or unusable files.
+
+08_github_uploaded_files.png
+GitHub evidence folder uploaded
+This screenshot shows the GitHub folder for the Unit 3 Assessment 3 NumPy ndarray evidence. It includes the answer text, notebook, screenshot checklist and saved ndarray files. This gives URL-based evidence that the practical files have been uploaded to the OG-Website GitHub repository. It also proves that the evidence is organised under the correct Unit 3 assessment folder. The GitHub page can be used by the assessor to check the notebook and saved files online, alongside the local screenshots in this evidence pack.
+
+09_github_notebook_url.png
+GitHub notebook URL visible
+This screenshot shows the Assessment 3 NumPy ndarray notebook open on GitHub, with the notebook URL available in the browser. This is the direct link evidence for the uploaded Jupyter Notebook. It supports the submission requirement because the VLE can receive either screenshots, an uploaded notebook, or a URL link to the notebook. The GitHub notebook page shows that the .ipynb file is stored online and can be accessed as part of the submitted evidence for creating and saving an ndarray with NumPy.

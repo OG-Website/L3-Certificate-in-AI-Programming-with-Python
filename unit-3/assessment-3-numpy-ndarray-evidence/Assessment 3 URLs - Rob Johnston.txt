@@ -1,0 +1,7 @@
+Assessment 3 URLs - Rob Johnston
+
+GitHub evidence folder:
+https://github.com/OG-Website/L3-Certificate-in-AI-Programming-with-Python/tree/main/unit-3/assessment-3-numpy-ndarray-evidence
+
+GitHub notebook:
+https://github.com/OG-Website/L3-Certificate-in-AI-Programming-with-Python/blob/main/unit-3/assessment-3-numpy-ndarray-evidence/Assessment%203%20-%20NumPy%20ndarray%20Evidence.ipynb

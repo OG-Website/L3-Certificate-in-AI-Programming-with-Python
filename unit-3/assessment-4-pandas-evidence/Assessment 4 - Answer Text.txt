@@ -24,37 +24,37 @@ Q2. Give a general description of how to create, access, and delete elements in 
 
 Series - How to create elements
 
-A Pandas Series can be created by passing a list, NumPy array or dictionary into pd.Series(). In my notebook, I create a Series called og_series from three score values. I also add index labels called Planning, Build and Testing. These labels are important because they give each value a clear meaning, instead of leaving the values as unnamed positions. The output proves that the Series has been created with labelled elements and a name, OG Website Scores. This screenshot is evidence for creating Series elements because it shows both the code and the printed result.
+A Pandas Series can be created by passing a list, NumPy array or dictionary into pd.Series(). In my notebook, I create a Series called og_series from three score values. I also add index labels called Planning, Build and Testing. These labels are important because they give each value a clear meaning, instead of leaving the values as unnamed positions. The output proves that the Series has been created with labelled elements and a name, OG Website Scores. This screenshot is evidence for creating Series elements because it shows both the code and the printed result. The label names also make the output easier to understand when it is reviewed later.
 
-Word count: 96 words
+Word count: 111 words
 
 Series - How to access elements
 
-Series elements can be accessed by label or by position. In my notebook, I use og_series.loc["Planning"] to access the value linked to the Planning label. I also use og_series.iloc[0] to access the first value by its position. Both commands return 82, which proves that I can retrieve the same element in two different ways. This is useful because label access is clearer when the data has named entries, while position access is useful when the order of the values matters. The screenshot shows the code and output together.
+Series elements can be accessed by label or by position. In my notebook, I use og_series.loc["Planning"] to access the value linked to the Planning label. I also use og_series.iloc[0] to access the first value by its position. Both commands return 82, which proves that I can retrieve the same element in two different ways. This is useful because label access is clearer when the data has named entries, while position access is useful when the order of the values matters. In the evidence screenshot, the code and output are shown together, so the assessor can see the exact method and the returned result.
 
-Word count: 92 words
+Word count: 107 words
 
 Series - How to delete elements
 
-Series elements can be deleted with the drop() method. In my notebook, I use og_series.drop("Testing") to remove the Testing element from the Series. I store the result in a new variable called series_after_delete so the original Series can still be shown for comparison. The output first prints the original Series with three labelled values, then prints the new Series with Testing removed. This proves that the deletion worked and also shows that drop() returns a changed Series unless the original object is overwritten or inplace=True is used.
+Series elements can be deleted with the drop() method. In my notebook, I use og_series.drop("Testing") to remove the Testing element from the Series. I store the result in a new variable called series_after_delete so the original Series can still be shown for comparison. The output first prints the original Series with three labelled values, then prints the new Series with Testing removed. This proves that the deletion worked and also shows that drop() returns a changed Series unless the original object is overwritten or inplace=True is used. This is useful evidence because it shows the before and after state clearly.
 
-Word count: 90 words
+Word count: 103 words
 
 DataFrames - How to create elements
 
-A Pandas DataFrame can be created from a dictionary, list of lists, array or another structured source. In my notebook, I create a DataFrame called og_dataframe from a dictionary. Each dictionary key becomes a column name, including Task, Library, Status and Score. Each list provides the values for that column. The output shows a table with three rows of Assessment 4 evidence activity. This screenshot proves that I can create DataFrame elements and organise mixed data types, including text labels and numerical scores, inside one structured table.
+A Pandas DataFrame can be created from a dictionary, list of lists, array or another structured source. In my notebook, I create a DataFrame called og_dataframe from a dictionary. Each dictionary key becomes a column name, including Task, Library, Status and Score. Each list provides the values for that column. The output shows a table with three rows of Assessment 4 evidence activity. This screenshot proves that I can create DataFrame elements and organise mixed data types, including text labels and numerical scores, inside one structured table. It also shows why Pandas is useful for labelled assessment evidence and for keeping practical work organised.
 
-Word count: 87 words
+Word count: 104 words
 
 DataFrames - How to access elements
 
-DataFrame elements can be accessed in several ways. In my notebook, I access the Status column with og_dataframe["Status"]. I then access the second row with og_dataframe.iloc[1], and one specific cell with og_dataframe.loc[0, "Status"]. This proves I can retrieve a whole column, a whole row and one selected value. Pandas makes this clearer than a plain array because the table has column names and row indexes. The screenshot is useful evidence because it shows the access methods and the exact values returned by each command.
+DataFrame elements can be accessed in several ways. In my notebook, I access the Status column with og_dataframe["Status"]. I then access the second row with og_dataframe.iloc[1], and one specific cell with og_dataframe.loc[0, "Status"]. This proves I can retrieve a whole column, a whole row and one selected value. Pandas makes this clearer than a plain array because the table has column names and row indexes. The screenshot is useful evidence because it shows the access methods and the exact values returned by each command, including the single cell value Created. This confirms the table can be checked precisely.
 
-Word count: 89 words
+Word count: 103 words
 
 DataFrames - How to delete elements
 
-DataFrame rows and columns can be deleted with drop(). In my notebook, I use og_dataframe.drop("Score", axis=1) to remove the Score column. I also use og_dataframe.drop(1, axis=0) to remove the row with index 1. The axis value is important because axis=1 refers to columns and axis=0 refers to rows. The output shows the DataFrame after the column deletion and again after the row deletion. This proves I understand how to remove different types of DataFrame elements using Pandas.
+DataFrame rows and columns can be deleted with drop(). In my notebook, I use og_dataframe.drop("Score", axis=1) to remove the Score column. I also use og_dataframe.drop(1, axis=0) to remove the row with index 1. The axis value is important because axis=1 refers to columns and axis=0 refers to rows. The output shows the DataFrame after the column deletion and again after the row deletion. This proves I understand how to remove different types of DataFrame elements using Pandas. It also gives clear before and after evidence for the practical task and confirms both deletion methods ran successfully.
 
-Word count: 85 words
+Word count: 104 words
 
