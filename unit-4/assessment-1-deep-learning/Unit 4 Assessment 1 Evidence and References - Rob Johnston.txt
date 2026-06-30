@@ -106,3 +106,18 @@ Private-data note:
 
 No account credentials, live account values, private emails, authentication details or raw private trading records are included in this evidence map.
 
+Sanitised screenshot evidence:
+
+Local screenshot folder: C:\OGBuild\College\Unit 4 - Linear Algebra Essentials for Deep Learning\Trade-A-Them Evidence Screenshots
+
+Cloud screenshot folder: https://github.com/OG-Website/L3-Certificate-in-AI-Programming-with-Python/tree/main/unit-4/trade-a-them-evidence-screenshots
+
+Screenshot evidence files:
+
+- U4_Evidence_01_NOVA_20_algorithms.png - shows the NOVA source enum with 20 algorithm names and the engine initialising all algorithms.
+- U4_Evidence_02_LSTM_predictor_source.png - shows the LSTM architecture, Adam optimiser, validation split and validation-loss tracking.
+- U4_Evidence_03_Transformer_predictor_source.png - shows the Transformer block, multi-head attention, Adam optimiser, validation split and validation-loss tracking.
+- U4_Evidence_04_MENTAL_engine_ML_training_stats.png - shows the MENTAL engine ML pathway, GradientBoostingClassifier, train/test split, fitting and statistics.
+- U4_Evidence_05_Model_trainer_ensemble_validation.png - shows the model trainer connecting LSTM/Transformer models and using validation loss/final loss for ensemble weighting.
+- U4_Evidence_06_Safe_model_and_data_summary.png - shows the safe model/data summary: trained model state, sample counts, label counts and trade-data counts without raw private records.
+
