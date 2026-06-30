@@ -32,11 +32,11 @@ This links to the public Trade-A-Them website and technology page because they s
 
 
 
-For deep learning, the same principle applies to the LSTM and Transformer predictor modules in Trade-A-Them. The training set would teach the model from historical sequences. The validation set would help monitor model choices and stop overfitting. The testing set would provide the final check after tuning. Overall, validation data helps improve the model during development, while testing data judges the finished model.
+For deep learning, the same principle applies to the LSTM and Transformer predictor modules in Trade-A-Them. The training set would teach the model from historical sequences. The validation set would help monitor model choices and stop overfitting. The testing set would provide the final check after tuning. Overall, validation data helps improve the model during development, while testing data judges the finished model. For my own project work, keeping validation and testing separate also protects the evidence trail because it means development changes do not weaken the final performance claim.
 
 
 
-Word count: 504 words
+Word count: 519 words
 
 
 
@@ -64,11 +64,11 @@ The deep learning modules in Trade-A-Them also use validation loss directly. The
 
 
 
-For my OG Web.site evidence style, I would show validation loss and validation accuracy in a notebook, chart, audit table or model report. I would also include public-safe references such as the Trade-A-Them website, the technology page, model code and safe model statistics. Overall, validation loss measures error, validation accuracy measures correct predictions, and together they help decide whether training is producing a model that can generalise.
+For my OG Web.site evidence style, I would show validation loss and validation accuracy in a notebook, chart, audit table or model report. I would also include public-safe references such as the Trade-A-Them website, the technology page, model code and safe model statistics. Overall, validation loss measures error, validation accuracy measures correct predictions, and together they help decide whether training is producing a model that can generalise. In my own work, I would not rely on one number by itself; I would compare validation loss, validation accuracy, test results and live outcomes before claiming a model is reliable.
 
 
 
-Word count: 501 words
+Word count: 520 words
 
 
 
