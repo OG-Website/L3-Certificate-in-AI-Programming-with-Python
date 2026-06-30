@@ -1,0 +1,17 @@
+Unit 4 Assessment 5 - Deep Learning Training Project
+
+Criteria covered: 3.1, 3.2, 3.3
+
+Main script: assessment5_train_validate_infer.py
+
+Generated outputs are in the outputs folder:
+- assessment5_best_model_checkpoint.pt
+- assessment5_training_metrics.csv
+- assessment5_summary.json
+- assessment5_training_validation_loss.png
+- assessment5_test_confusion_matrix.png
+
+Run command:
+python assessment5_train_validate_infer.py
+
+The script trains a PyTorch neural network, tunes hyperparameters using validation loss, saves the best model checkpoint, evaluates the test set and performs inference.

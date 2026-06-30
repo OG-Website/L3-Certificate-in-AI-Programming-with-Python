@@ -1,0 +1,89 @@
+OG Web.site Unit 4 Assessment 3 Vectors Answer Sheet
+
+Rob Johnston
+
+Vectors, Transpose, Magnitude, Direction and Python Programming
+
+Q1. Outline what a vector is and describe the purpose of vector transpose. (Unit Y/650/0762 1.1, 1.2)
+
+Word count: 532 words
+
+A vector is an ordered set of values that can represent size, direction, position, features or movement. In mathematics, a vector is often drawn as an arrow. The length of the arrow shows magnitude and the arrow points in a direction. In programming and deep learning, a vector is usually stored as a one-dimensional array, list, tensor or column of numbers. For example, a single customer record, a set of image pixel values, a set of sensor readings or a row of model features can all be represented as vectors.
+
+Vectors matter in AI because models need numerical inputs. A deep learning model does not understand words, pictures or trading situations directly. Those things have to be turned into numbers first. In my own AI programming work, this connects to projects like Trade-A-Them and OG Web.site because real systems need structured data before any model can process it. Market indicators, confidence scores, price changes and risk values can be arranged into feature vectors. The model can then compare patterns, calculate outputs and update its parameters.
+
+A vector transpose changes the orientation of a vector. A row vector such as [1, 2, 3] can be transposed into a column vector with the same values arranged vertically. The values do not change; the layout changes. This is important because matrix and vector operations depend on compatible shapes. A dot product, matrix multiplication or neural network layer may require data to be arranged as a row vector, column vector or batch of vectors. If the orientation is wrong, the calculation may fail or produce a shape error.
+
+The purpose of vector transpose is therefore to make data fit the operation being performed. In Python, NumPy arrays and PyTorch tensors both use shapes to control calculations. A transpose helps align feature vectors with weight matrices in deep learning. This supports clean and reliable code because the programmer can inspect shapes, correct the layout and make sure the mathematical operation matches the model design.
+
+A practical example is a feature vector being passed into a model layer. If the vector is stored as a row but the calculation expects a column, the values may be correct but the operation will still be wrong. Transpose fixes that orientation problem. This is why deep learning code often prints shapes such as (batch_size, features), (features, outputs) or (channels, height, width). The values and the shape both matter.
+
+Vectors also support batches. One vector can describe one item, while a batch matrix can hold many vectors together. This lets Python process multiple examples at once. In Unit 4 this is important because deep learning models are trained on batches rather than one item at a time. Understanding vector orientation makes it easier to understand why a model can accept a batch of feature vectors and return a batch of predictions.
+
+This also connects to the assessment project resources because PyTorch tensors are built around the same idea. A single item can be a vector, an image can be a group of matrices, and a batch can be a higher-dimensional tensor. The model still relies on the same principle: numerical values need a clear shape so the calculation can be applied correctly.
+
+Q2. Outline how to calculate vector magnitude and direction. (Unit Y/650/0762 1.3)
+
+Word count: 531 words
+
+Vector magnitude is the length or size of a vector. For a two-dimensional vector, the magnitude can be calculated using Pythagoras' theorem. If a vector is [x, y], the magnitude is the square root of x squared plus y squared. For example, the vector [3, 4] has a magnitude of sqrt(3^2 + 4^2), which is sqrt(9 + 16), so the magnitude is 5. The same idea works for higher-dimensional vectors. For a vector [x1, x2, x3], the magnitude is sqrt(x1^2 + x2^2 + x3^2). In Python, this can be calculated with NumPy using np.linalg.norm(vector).
+
+Direction describes where the vector points. In two dimensions, direction is often calculated as an angle from the x-axis. This can be found using arctan(y / x), but the safer programming method is atan2(y, x), because it handles positive and negative values correctly across different quadrants. For example, a vector [0, 1] points straight up, while [1, 0] points to the right. In Python, math.atan2(y, x) can calculate the angle in radians, and math.degrees() can convert it to degrees.
+
+In higher-dimensional AI work, direction is often understood through normalisation rather than a simple angle. A vector can be converted into a unit vector by dividing every value by the magnitude. A unit vector has magnitude 1 but keeps the same direction. This is useful when the direction or pattern matters more than the original size. For example, if two vectors have the same direction but different magnitudes, normalisation makes them easier to compare.
+
+Magnitude and direction support deep learning because models often compare vectors. In text, image and trading data, the model may need to know whether feature vectors are similar, whether one vector is stronger than another, or whether data has been scaled properly. In my own project context, a market-feature vector could contain values such as RSI, moving averages, volatility and confidence. Magnitude would describe the overall size of the signal, while direction would describe the pattern of those features. If the values are badly scaled, one large feature can dominate the calculation. This is why normalisation and scaling are common before training a model.
+
+Overall, vector magnitude is calculated from the squared values inside the vector, while direction is calculated from the relationship between the vector's components. These calculations help convert raw numerical data into a form that can be compared, normalised and used inside Python models.
+
+Magnitude is also useful for spotting scale problems. If one vector has a much larger magnitude than another because one feature is measured in thousands and another is measured between zero and one, the model may give the larger feature too much influence. Normalisation can reduce this problem by putting values onto a more consistent scale. This supports fairer training and makes model behaviour easier to interpret.
+
+Direction is useful for similarity. Two vectors may have different magnitudes but point in a similar direction, which can mean they have a similar pattern. This is why cosine similarity is used in many AI systems. It focuses on the angle between vectors rather than just their size. That idea is useful in recommendation systems, embeddings and any model that compares feature patterns.
+
+Q3. Explain the use of vector addition and vector multiplication. (Unit Y/650/0762 1.4)
+
+Word count: 559 words
+
+Vector addition combines vectors of the same shape by adding matching components. For example, [2, 3] + [4, 1] becomes [6, 4]. The first values are added together and the second values are added together. This is useful when separate effects need to be combined. In a movement example, one vector might represent the current direction of travel and another might represent wind or force. In a data example, one vector might represent a base signal and another might represent an adjustment. The result is a new vector that includes both effects.
+
+In Python programming, vector addition is commonly handled by NumPy arrays or PyTorch tensors. Instead of writing a manual loop, the programmer can add two arrays directly if their shapes match. This makes code shorter, clearer and less error-prone. In deep learning, vector addition appears in many places, such as adding bias terms, combining residual connections, updating embeddings or adding gradients during optimisation. It is a basic operation, but it supports larger model behaviour.
+
+Vector multiplication can mean different things depending on the operation. Element-wise multiplication multiplies matching components. For example, [2, 3] * [4, 5] becomes [8, 15]. This is useful for applying weights, masks or scaling factors to data. If one vector contains feature values and another contains importance weights, element-wise multiplication can increase or reduce the effect of each feature.
+
+Another important type is the dot product. A dot product multiplies matching components and then adds the results together. For example, [2, 3] dot [4, 5] is (2 x 4) + (3 x 5), which equals 23. The dot product is central to deep learning because a neuron performs a weighted sum of inputs. The input vector is multiplied by a weight vector, then the results are added and passed through an activation function. This is one of the core calculations behind neural networks.
+
+Vector multiplication is also used to measure similarity. If two vectors point in a similar direction, their dot product is larger. If they point in opposite directions, the result can be negative. This is useful for recommendation systems, text embeddings, image features and model attention mechanisms. In my Trade-A-Them style project work, a feature vector could be multiplied by a weight vector to produce a score for a decision. That does not mean the model is guessing randomly; it means the model is applying learned importance values to structured numerical evidence.
+
+Overall, vector addition is used to combine matching numerical structures, while vector multiplication is used to scale, weight, compare and score vectors. Both operations support the mathematical layer beneath Python AI programming.
+
+These operations are also part of training. During backpropagation, gradients are calculated and used to update weights. Those weight updates are vector and matrix operations. The optimiser applies small changes to the model parameters so that the next prediction should have lower error. This links vector multiplication and addition directly to the training process rather than only to standalone maths examples.
+
+In practical Python, the main risk is shape mismatch. Addition usually needs compatible shapes, and multiplication needs the right operation for the job. Element-wise multiplication, dot product and matrix multiplication are not the same. A good AI programmer needs to know which one is being used because each operation has a different meaning. That is why I would show the operation, shape and output clearly when presenting this work.
+
+Q4. Describe how vectors support programming with Python. (Unit Y/650/0762 1.5)
+
+Word count: 554 words
+
+Vectors support Python programming because they give numerical data a structure that libraries can process efficiently. A normal Python list can store values, but specialist libraries such as NumPy, Pandas, scikit-learn and PyTorch are designed to work with vector-like data. When values are arranged as arrays or tensors, Python can apply operations across the whole structure instead of processing every value manually. This is faster, easier to read and closer to the mathematics used in AI.
+
+In data preparation, vectors are used to represent features. A feature vector might contain the numerical values that describe one example. In an image model, the vector might contain pixel values or extracted image features. In a trading model, the vector might contain indicators such as price movement, volatility, moving averages, volume and confidence. In a text model, words can be converted into embedding vectors that store meaning as numbers. This matters because machine learning models cannot learn from raw ideas; they learn from numerical representations.
+
+Vectors also support model calculations. A neural network layer receives an input vector and multiplies it by a matrix of weights. Bias values are added, an activation function is applied, and the result becomes the next layer's vector. This process is repeated through the network. Because of this, vector shape is important. Python libraries track shapes so the programmer can see whether data has the correct format. Shape errors are common in AI programming, so understanding vectors makes debugging easier.
+
+Vectors are also used for performance and clarity. With NumPy, I can calculate vector magnitude using np.linalg.norm, add vectors directly, normalise a vector, or calculate a dot product. With PyTorch, tensors can be moved to a CPU or GPU and processed in batches. This is important for Unit 4 because deep learning training depends on many vector and matrix operations being performed repeatedly. Without vectorised operations, model training would be much slower.
+
+In my own OG Web.site evidence style, I would explain vector work by showing the data, the shape, the operation and the output. For example, I could show a Python feature vector, print its shape, calculate its magnitude, transpose it where needed and use it inside a simple model. This links the theory to a practical workflow. In Trade-A-Them, the same idea applies when indicators and model inputs are arranged as structured numerical data before being passed into an ML process.
+
+Overall, vectors support Python programming by turning real-world information into numerical structures that can be stored, transformed, compared and processed by AI libraries. They are a bridge between raw data and the calculations used inside machine learning and deep learning models.
+
+Vectors also make code reusable. Once data is represented as vectors, the same model code can often process different rows, samples or batches without being rewritten. This is one reason frameworks such as PyTorch are powerful: they expect tensors with consistent dimensions and then apply the same mathematical operations across all examples. That approach supports professional, scalable programming rather than one-off manual calculations.
+
+For assessment work, this means I should not only define a vector but also explain how it appears in real code. A vector can be an input sample, a weight row, a bias, an embedding, a prediction output or a gradient. Seeing those roles makes the connection between linear algebra and Python programming much clearer.
+
+References Used
+
+Course source: Unit 4 assessment criteria file
+Course source: Unit 004 3is, title slide, starters, plenaries, assessment activity slides.pptx
+Course source: Resources...-20260630.zip
+Public project context: https://www.tradeathem.co.uk/
+Public technology context: https://www.tradeathem.co.uk/pages/technology

@@ -1,0 +1,53 @@
+{
+  "assessment": "Unit 4 Assessment 6",
+  "criteria_covered": [
+    "3.3",
+    "4.1",
+    "4.2",
+    "4.3",
+    "4.4",
+    "4.5",
+    "4.6",
+    "4.7"
+  ],
+  "device_used": "cpu",
+  "cuda_available": false,
+  "pretrained_network": "TinyFeatureExtractor pre-trained on source synthetic image task and loaded into target ShapeClassifier",
+  "data_loading_and_batching": {
+    "train_batches": 12,
+    "validation_batches": 3,
+    "test_batches": 3,
+    "batch_size": 32
+  },
+  "image_processing": [
+    "PIL image generation",
+    "RGB conversion into tensor format",
+    "random flips",
+    "random rotation",
+    "brightness augmentation",
+    "normalisation with mean and standard deviation"
+  ],
+  "checkpoint_files": [
+    "assessment6_pretrained_feature_checkpoint.pt",
+    "assessment6_best_model_checkpoint.pt"
+  ],
+  "test_loss": 2.808037246874543e-07,
+  "test_accuracy": 1.0,
+  "inference": {
+    "expected_shape": "diagonal",
+    "predicted_shape": "diagonal",
+    "probabilities": [
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "outputs": [
+    "assessment6_pretrain_metrics.csv",
+    "assessment6_training_metrics.csv",
+    "assessment6_training_validation_loss.png",
+    "assessment6_test_confusion_matrix.png",
+    "assessment6_image_processing_preview.png",
+    "assessment6_inference_result.png"
+  ]
+}

@@ -1,0 +1,75 @@
+OG Web.site Unit 4 Assessment 4 Linear Algebra and Matrices Answer Sheet
+
+Rob Johnston
+
+Linear Combination, Linear Span, Linear Dependency, Matrices and Feedforward Processing
+
+Q1. Give examples of linear combination and linear span, and describe the use of linear dependency. (Unit Y/650/0762 2.1, 2.2)
+
+Word count: 580 words
+
+A linear combination is created when vectors are multiplied by scalar values and then added together. For example, if vector a is [1, 2] and vector b is [3, 1], then 2a + 3b is a linear combination. It means two copies of vector a are combined with three copies of vector b. The calculation is 2[1, 2] + 3[3, 1], which becomes [2, 4] + [9, 3], giving [11, 7]. This shows how new vectors can be built from existing vectors by scaling and adding them.
+
+Linear span is the set of all possible vectors that can be made from linear combinations of a group of vectors. If two vectors point in different directions in a two-dimensional space, their span may cover the whole 2D plane. If they point in the same direction, their span is only a line. For example, [1, 0] and [0, 1] can span a 2D plane because one moves along the x-axis and the other moves along the y-axis. By combining them with different scalar values, any point in the 2D plane can be represented.
+
+Linear dependency describes a situation where one vector can be made from the others. For example, [2, 4] is dependent on [1, 2] because it is just two times that vector. This matters because dependent vectors do not add new direction or new information. If a dataset or model contains repeated or highly similar features, those features may not improve the model. They can make calculations less efficient and can sometimes make the model harder to interpret.
+
+In AI programming, these ideas support feature representation and model design. A model works with combinations of features, weights and activations. If the features contain useful independent information, the model has more meaningful directions to learn from. If several features are linearly dependent, they may be giving the model the same information in different forms. This can waste processing power or make training less stable.
+
+In my own project context, this connects to data-led systems such as Trade-A-Them. If several market indicators all repeat the same underlying price movement, they may be linearly related. If other features capture separate information, such as volatility, trend strength or momentum, they may add more useful dimensions to the feature space. Understanding linear combination, span and dependency helps explain whether the model has enough independent information to learn from.
+
+Overall, a linear combination builds new vectors from existing ones, linear span describes the space those combinations can cover, and linear dependency identifies when vectors are not adding new independent information. These concepts are important because deep learning models are built from repeated linear and non-linear transformations of numerical data.
+
+Linear dependency is also useful when thinking about data quality. If a model receives several columns that all say almost the same thing, the model may become more complex without gaining much extra information. In some cases, this can make the model more sensitive to noise. Feature selection, dimensionality reduction and careful preprocessing can help reduce this issue. In Python, this can be investigated with correlation checks, matrix rank or principal component analysis.
+
+Linear span also helps explain why a model may be limited. If the available feature vectors only cover a small part of the possible problem space, the model may not learn enough to generalise. More useful features can expand the space that the model can learn from. This connects the mathematical idea of span to the practical problem of giving a model enough meaningful information.
+
+Q2. Outline what a matrix is and explain matrix addition, scalar multiplication and matrix multiplication. (Unit Y/650/0762 3.1, 3.2)
+
+Word count: 592 words
+
+A matrix is a rectangular grid of numbers arranged in rows and columns. It can be thought of as a two-dimensional array. For example, a matrix with two rows and three columns has shape 2 x 3. In Python, matrices can be represented with NumPy arrays, Pandas data structures or PyTorch tensors. Matrices are important in deep learning because they store batches of data, model weights, image pixels, transformations and intermediate layer outputs.
+
+Matrix addition is performed by adding matching positions in two matrices of the same shape. For example, [[1, 2], [3, 4]] + [[5, 6], [7, 8]] becomes [[6, 8], [10, 12]]. The first row and first column are added together, the first row and second column are added together, and so on. The matrices must usually have the same shape because each value needs a matching value. In programming, matrix addition is used when combining outputs, adding biases or updating values during training.
+
+Scalar multiplication means multiplying every value in a matrix by one number. If a matrix [[1, 2], [3, 4]] is multiplied by 3, the result is [[3, 6], [9, 12]]. The shape stays the same, but every value is scaled. This is useful for weighting data, reducing or increasing signals, adjusting learning updates and applying constants across a whole structure. In Python, NumPy and PyTorch can apply scalar multiplication directly without a manual loop.
+
+Matrix multiplication is different from element-wise multiplication. In matrix multiplication, rows from the first matrix are combined with columns from the second matrix using dot products. The number of columns in the first matrix must match the number of rows in the second matrix. For example, a 2 x 3 matrix can be multiplied by a 3 x 4 matrix, and the result will have shape 2 x 4. This shape rule is one reason that understanding matrix dimensions is essential in deep learning.
+
+Matrix multiplication is central to neural networks. A batch of input data can be stored as a matrix, and the model's weights can be stored as another matrix. Multiplying the input matrix by the weight matrix produces the next layer's output. Bias values are then added and an activation function is applied. This process lets a model transform data from raw inputs into more useful representations.
+
+In my OG Web.site and AI programming workflow, matrix understanding helps make code easier to explain. Instead of saying a model is a black box, I can describe the shape of the input matrix, the weight matrix and the output matrix. In Trade-A-Them style feature work, a matrix could contain many rows of historical examples and many columns of indicators. Matrix operations would allow those examples to be processed together. Overall, matrices are the main structure used for organising and transforming data in deep learning.
+
+Matrix arithmetic also helps with debugging. If a PyTorch layer expects an input with a certain number of features and the data has a different shape, the error usually comes from a matrix dimension mismatch. Understanding rows, columns and multiplication rules makes those errors easier to fix. It also helps when reading model summaries, because the number of parameters in a layer depends on the size of the matrix of weights.
+
+Matrices can also represent images. A grayscale image can be seen as a matrix of pixel intensity values, while a colour image can be represented as several matrices, one for each colour channel. This links matrix arithmetic to the image processing work in Unit 4. Normalisation, filtering and convolution all depend on structured matrix or tensor operations.
+
+Q3. Explain how the feedforward process uses linear algebra. (Unit Y/650/0762 4.1)
+
+Word count: 618 words
+
+The feedforward process is the stage where input data moves through a neural network to produce an output prediction. It is called feedforward because the data moves forward from the input layer, through hidden layers, to the output layer. During this process, the model does not yet update its weights. It calculates a prediction using the current weights and biases. Linear algebra is used at every layer because the data, weights and outputs are stored as vectors, matrices or tensors.
+
+At the start, the input data is arranged as a vector or a batch matrix. If one example has four features, it may be represented as a vector of four numbers. If there are 32 examples in a batch, the data may be represented as a 32 x 4 matrix. The first layer contains a weight matrix. The feedforward calculation multiplies the input matrix by the weight matrix and then adds a bias vector. This is a linear algebra operation.
+
+The basic calculation can be described as z = XW + b. X is the input matrix, W is the weight matrix, b is the bias, and z is the layer output before activation. The shapes have to match. If X has shape 32 x 4 and W has shape 4 x 8, the result has shape 32 x 8. This means the layer has transformed four input features into eight hidden features for each example in the batch.
+
+After the matrix multiplication and bias addition, an activation function is applied. The activation function introduces non-linearity, which allows the network to learn more complex patterns than a single straight-line relationship. Common activation functions include ReLU, sigmoid and tanh. Even though the activation function is not just a matrix multiplication, it is applied to the numerical output created by the linear algebra step.
+
+This process repeats through each layer. The output from one layer becomes the input to the next layer. In an image model, convolutional layers also use structured linear operations to apply filters across images. In a dense network, each layer uses matrix multiplication to combine inputs and weights. The final layer produces the prediction, such as a class label or a numerical value.
+
+In my own AI programming work, understanding feedforward linear algebra helps me explain model behaviour more professionally. A model is not magic; it is a sequence of numerical transformations. For a project such as Trade-A-Them, features could be arranged as tensors, multiplied by learned weights and transformed through layers to produce a decision score or prediction. For a PyTorch model in Unit 4, the same idea applies when inputs are passed through nn.Linear layers or a small image classifier.
+
+Overall, the feedforward process uses linear algebra to transform input vectors and matrices through learned weights and biases. This is how a neural network turns structured data into a prediction before training uses loss, gradients and backpropagation to improve the weights.
+
+The feedforward process also explains why batching works. Instead of sending one vector through the model, PyTorch can send a batch matrix through the same layers. The weight matrix is reused for every item in the batch, and the output is a batch of predictions. This is much more efficient than handling each example separately and is one reason GPUs are useful for deep learning.
+
+In a practical evidence workflow, I would demonstrate this by printing the input tensor shape, the output tensor shape and the loss value after a forward pass. That would show that the data has moved through the model correctly before any training update is made. It also makes clear that feedforward processing is not a vague idea; it is a real set of matrix and tensor operations in the code.
+
+References Used
+
+Course source: Unit 4 assessment criteria file
+Course source: Unit 004 3is, title slide, starters, plenaries, assessment activity slides.pptx
+Course source: Resources...-20260630.zip
+Public project context: https://www.tradeathem.co.uk/
+Public technology context: https://www.tradeathem.co.uk/pages/technology

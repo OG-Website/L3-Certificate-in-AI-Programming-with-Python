@@ -1,0 +1,21 @@
+Unit 4 Assessment 6 - Pre-trained Networks and Image Processing Project
+
+Criteria covered: 3.3, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7
+
+Main script: assessment6_pretrained_image_processing.py
+
+Generated outputs are in the outputs folder:
+- assessment6_pretrained_feature_checkpoint.pt
+- assessment6_best_model_checkpoint.pt
+- assessment6_pretrain_metrics.csv
+- assessment6_training_metrics.csv
+- assessment6_summary.json
+- assessment6_image_processing_preview.png
+- assessment6_training_validation_loss.png
+- assessment6_test_confusion_matrix.png
+- assessment6_inference_result.png
+
+Run command:
+python assessment6_pretrained_image_processing.py
+
+The script pre-trains a feature extractor, reuses it as a pre-trained network, detects cuda if available, processes images, normalises data, applies augmentation, uses DataLoaders for training/validation/testing batches, saves checkpoints and reloads the trained model for inference.
