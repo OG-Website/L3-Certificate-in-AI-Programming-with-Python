@@ -1,0 +1,13 @@
+Unit 4 Assessment 5 - Upload Checklist
+
+Upload this clean file set for the Lesson 5 project evidence.
+
+- Unit 4 Assessment 5 - SS Evidence Collection - Rob Johnston.docx
+- Unit 4 Assessment 5 - TQUK Observation Record - Rob Johnston.docx
+- Unit 4 Assessment 5 - Project Notebook - Rob Johnston.ipynb
+- Unit 4 Assessment 5 - VLE Answer Text.txt
+- Unit 4 Assessment 5 - Links and Evidence Index.txt
+- assessment5_train_validate_infer.py
+- video/Unit 4 Assessment 5 - Video Walkthrough.mp4
+
+The individual PNG charts, CSV, JSON, checkpoint files, voiceover MP3 and slide images are kept in the folder and GitHub repo as supporting evidence for the notebook and evidence collection. The screenshots/charts are already embedded in the SS Evidence Collection document, so they do not need to be uploaded separately unless the assessor asks for the raw output files.

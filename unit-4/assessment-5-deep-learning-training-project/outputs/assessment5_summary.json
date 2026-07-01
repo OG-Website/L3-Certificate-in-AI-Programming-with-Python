@@ -7,51 +7,75 @@
   ],
   "device_used": "cpu",
   "cuda_available": false,
-  "data_split": {
-    "train": 630,
-    "validation": 135,
-    "test": 135
+  "training_demonstrations": {
+    "iris": {
+      "train": 90,
+      "validation": 30,
+      "test": 30,
+      "best_validation_loss": 0.09046950141588847,
+      "test_accuracy": 0.9333333333333333
+    },
+    "synthetic": {
+      "train": 540,
+      "validation": 180,
+      "test": 180,
+      "best_validation_loss": 0.05490047416339318,
+      "test_accuracy": 0.9888888888888889
+    }
   },
-  "hyperparameter_configs_tested": [
+  "iris_hyperparameter_configs_tested": [
+    {
+      "hidden_size": 8,
+      "learning_rate": 0.02,
+      "batch_size": 16,
+      "epochs": 40
+    },
+    {
+      "hidden_size": 16,
+      "learning_rate": 0.01,
+      "batch_size": 16,
+      "epochs": 40
+    },
     {
       "hidden_size": 32,
-      "learning_rate": 0.02,
-      "batch_size": 32,
-      "epochs": 12
-    },
-    {
-      "hidden_size": 64,
-      "learning_rate": 0.01,
-      "batch_size": 32,
-      "epochs": 12
-    },
-    {
-      "hidden_size": 64,
       "learning_rate": 0.005,
-      "batch_size": 32,
-      "epochs": 12
+      "batch_size": 16,
+      "epochs": 40
     }
   ],
-  "best_result": {
-    "hidden_size": 32,
-    "learning_rate": 0.02,
-    "best_validation_loss": 0.06127762860722012,
-    "test_loss": 0.007268806040304264,
-    "test_accuracy": 1.0
+  "iris_best_result": {
+    "dataset": "iris",
+    "hidden_size": 16,
+    "learning_rate": 0.01,
+    "best_validation_loss": 0.09046950141588847,
+    "test_loss": 0.11118992815415064,
+    "test_accuracy": 0.9333333333333333
   },
-  "inference": {
+  "iris_inference": {
     "actual_class": 1,
+    "actual_class_name": "versicolor",
     "predicted_class": 1,
+    "predicted_class_name": "versicolor",
+    "class_names": [
+      "setosa",
+      "versicolor",
+      "virginica"
+    ],
     "probabilities": [
-      0.0006000000284984708,
-      0.8907999992370605,
-      0.10859999805688858
+      0.006800000090152025,
+      0.9564999938011169,
+      0.03680000081658363
     ]
   },
   "outputs": [
-    "assessment5_best_model_checkpoint.pt",
+    "assessment5_iris_best_model_checkpoint.pt",
+    "assessment5_synthetic_model_checkpoint.pt",
     "assessment5_training_metrics.csv",
-    "assessment5_training_validation_loss.png",
-    "assessment5_test_confusion_matrix.png"
+    "assessment5_summary.json",
+    "assessment5_iris_training_loss.png",
+    "assessment5_synthetic_training_loss.png",
+    "assessment5_iris_validation_tuning_summary.png",
+    "assessment5_iris_test_confusion_matrix.png",
+    "assessment5_iris_inference_result.png"
   ]
 }

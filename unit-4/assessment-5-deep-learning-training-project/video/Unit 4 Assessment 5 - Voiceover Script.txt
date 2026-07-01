@@ -1,0 +1,13 @@
+My name is Rob Johnston. My tutor and assessor is Mohammad Ali Afgan, preferred name Ali. The recording date is 1 July 2026. The recording location is my house, Melksham. The purpose of this recording is to demonstrate my Unit 4 Deep Learning Lesson 5 project evidence for the TQUK Level 3 Certificate in AI Programming with Python.
+
+This project demonstrates criterion 3.1 by training deep learning models in two ways. The first training demonstration uses the Iris dataset. The second training demonstration uses a synthetic classification dataset. Both examples use PyTorch, DataLoaders, a neural network, loss calculation, backpropagation and optimiser updates.
+
+For the Iris training evidence, the model trains on ninety training samples, uses thirty validation samples and is tested on thirty held-back samples. The Iris training chart shows the training and validation loss across epochs.
+
+For the synthetic training evidence, the model trains on five hundred and forty training samples, uses one hundred and eighty validation samples and is tested on one hundred and eighty held-back samples. This gives a second way to train a deep learning model using a different dataset structure.
+
+The project demonstrates criterion 3.2 by using the Iris validation set for hyperparameter tuning. Three Iris configurations are tested with different hidden sizes and learning rates. The selected Iris model uses hidden size 16 and learning rate 0.01. The best validation loss is 0.0905.
+
+The project demonstrates criterion 3.3 by using the trained Iris model for inference. The saved Iris checkpoint is loaded back into the model, a held-back Iris example is passed through the model, and the predicted class is produced from the output probabilities. The actual class is versicolor and the predicted class is versicolor.
+
+The uploaded evidence includes the SS Evidence Collection document, the TQUK Observation Record, the project notebook, the Python source script, the generated output files, the model checkpoints, the links and evidence index, and this walkthrough video.
