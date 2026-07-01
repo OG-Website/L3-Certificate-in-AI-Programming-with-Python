@@ -10,4 +10,4 @@ Upload this clean file set for the Lesson 5 project evidence.
 - assessment5_train_validate_infer.py
 - video/Unit 4 Assessment 5 - Video Walkthrough.mp4
 
-The individual PNG charts, CSV, JSON, checkpoint files, voiceover MP3 and slide images are kept in the folder and GitHub repo as supporting evidence for the notebook and evidence collection. The screenshots/charts are already embedded in the SS Evidence Collection document, so they do not need to be uploaded separately unless the assessor asks for the raw output files.
+The individual PNG charts, CSV, JSON and checkpoint files are kept in the outputs folder as supporting notebook evidence. The screenshots/charts are already embedded in the SS Evidence Collection document, so they do not need to be uploaded separately unless the assessor asks for the raw output files. The video folder contains one file only: the final walkthrough MP4.

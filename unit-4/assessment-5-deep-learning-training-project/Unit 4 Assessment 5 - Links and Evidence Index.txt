@@ -19,8 +19,6 @@ Local evidence files:
 - C:\OGBuild\College\Unit 4 - Linear Algebra Essentials for Deep Learning\Assessment 5 - Deep Learning Training Project\outputs\assessment5_iris_validation_tuning_summary.png
 - C:\OGBuild\College\Unit 4 - Linear Algebra Essentials for Deep Learning\Assessment 5 - Deep Learning Training Project\outputs\assessment5_iris_test_confusion_matrix.png
 - C:\OGBuild\College\Unit 4 - Linear Algebra Essentials for Deep Learning\Assessment 5 - Deep Learning Training Project\outputs\assessment5_iris_inference_result.png
-- C:\OGBuild\College\Unit 4 - Linear Algebra Essentials for Deep Learning\Assessment 5 - Deep Learning Training Project\video\Unit 4 Assessment 5 - Voiceover Script.txt
-- C:\OGBuild\College\Unit 4 - Linear Algebra Essentials for Deep Learning\Assessment 5 - Deep Learning Training Project\video\Unit 4 Assessment 5 - Voiceover.mp3
 - C:\OGBuild\College\Unit 4 - Linear Algebra Essentials for Deep Learning\Assessment 5 - Deep Learning Training Project\video\Unit 4 Assessment 5 - Video Walkthrough.mp4
 
 GitHub repository file links:
@@ -39,6 +37,4 @@ GitHub repository file links:
 - https://github.com/OG-Website/L3-Certificate-in-AI-Programming-with-Python/tree/main/unit-4/assessment-5-deep-learning-training-project/outputs/assessment5_iris_validation_tuning_summary.png
 - https://github.com/OG-Website/L3-Certificate-in-AI-Programming-with-Python/tree/main/unit-4/assessment-5-deep-learning-training-project/outputs/assessment5_iris_test_confusion_matrix.png
 - https://github.com/OG-Website/L3-Certificate-in-AI-Programming-with-Python/tree/main/unit-4/assessment-5-deep-learning-training-project/outputs/assessment5_iris_inference_result.png
-- https://github.com/OG-Website/L3-Certificate-in-AI-Programming-with-Python/tree/main/unit-4/assessment-5-deep-learning-training-project/video/Unit%204%20Assessment%205%20-%20Voiceover%20Script.txt
-- https://github.com/OG-Website/L3-Certificate-in-AI-Programming-with-Python/tree/main/unit-4/assessment-5-deep-learning-training-project/video/Unit%204%20Assessment%205%20-%20Voiceover.mp3
 - https://github.com/OG-Website/L3-Certificate-in-AI-Programming-with-Python/tree/main/unit-4/assessment-5-deep-learning-training-project/video/Unit%204%20Assessment%205%20-%20Video%20Walkthrough.mp4
